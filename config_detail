@@ -1,0 +1,4 @@
+command used for generating random flow and trips
+python "C:\Program Files (x86)\Eclipse\Sumo\tools\randomTrips.py" -n 5x5.net.xml -e 18000 -o 5x5.trips.xml --seed 42 --period-file normal_flows9000.txt
+duarouter --net-file 5x5.net.xml --route-files 5x5.trips.xml --output-file 5x5.rou.xml -s 18000
+# ->> to change the flow in the .sumocfg file you just have to change the route_files value.

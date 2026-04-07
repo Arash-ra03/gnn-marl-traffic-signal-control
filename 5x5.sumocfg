@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-08-25 12:20:02 by Eclipse SUMO GUI Version 1.20.0
+-->
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="5x5.net.xml"/>
+        <route-files value="traffic_flows/5x5_220_1.rou.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="18000"/>
+    </time>
+
+    <report>
+        <tripinfo-output value="outputs/tripinfo.xml"/>
+        <summary-output value="outputs/summary.xml"/>
+        <statistics-output value="outputs/statistics.xml"/> <!-- 👈 Added this line -->
+    </report>
+
+    <output>
+        <queue-output value="outputs/queue.xml"/>
+        <queue-output.period value="20"/>
+    </output>
+
+</configuration>

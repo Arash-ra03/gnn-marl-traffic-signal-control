@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-09-30 14:45:29 by Eclipse SUMO netconvert Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="5x5.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="static.net.xml"/>
+        <plain-output-prefix value="static"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <tls_building>
+        <tls.default-type value="static"/>
+        <tls.rebuild value="true"/>
+    </tls_building>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<nodes version="1.20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,2000.00,2000.00" origBoundary="0.00,0.00,2000.00,2000.00" projParameter="!"/>
+
+    <node id="A0" x="0.00" y="0.00" type="priority"/>
+    <node id="A1" x="0.00" y="500.00" type="traffic_light" tl="A1"/>
+    <node id="A2" x="0.00" y="1000.00" type="traffic_light" tl="A2"/>
+    <node id="A3" x="0.00" y="1500.00" type="traffic_light" tl="A3"/>
+    <node id="A4" x="0.00" y="2000.00" type="priority"/>
+    <node id="B0" x="500.00" y="0.00" type="traffic_light" tl="B0"/>
+    <node id="B1" x="500.00" y="500.00" type="traffic_light" tl="B1"/>
+    <node id="B2" x="500.00" y="1000.00" type="traffic_light" tl="B2"/>
+    <node id="B3" x="500.00" y="1500.00" type="traffic_light" tl="B3"/>
+    <node id="B4" x="500.00" y="2000.00" type="traffic_light" tl="B4"/>
+    <node id="C0" x="1000.00" y="0.00" type="traffic_light" tl="C0"/>
+    <node id="C1" x="1000.00" y="500.00" type="traffic_light" tl="C1"/>
+    <node id="C2" x="1000.00" y="1000.00" type="traffic_light" tl="C2"/>
+    <node id="C3" x="1000.00" y="1500.00" type="traffic_light" tl="C3"/>
+    <node id="C4" x="1000.00" y="2000.00" type="traffic_light" tl="C4"/>
+    <node id="D0" x="1500.00" y="0.00" type="traffic_light" tl="D0"/>
+    <node id="D1" x="1500.00" y="500.00" type="traffic_light" tl="D1"/>
+    <node id="D2" x="1500.00" y="1000.00" type="traffic_light" tl="D2"/>
+    <node id="D3" x="1500.00" y="1500.00" type="traffic_light" tl="D3"/>
+    <node id="D4" x="1500.00" y="2000.00" type="traffic_light" tl="D4"/>
+    <node id="E0" x="2000.00" y="0.00" type="priority"/>
+    <node id="E1" x="2000.00" y="500.00" type="traffic_light" tl="E1"/>
+    <node id="E2" x="2000.00" y="1000.00" type="traffic_light" tl="E2"/>
+    <node id="E3" x="2000.00" y="1500.00" type="traffic_light" tl="E3"/>
+    <node id="E4" x="2000.00" y="2000.00" type="priority"/>
+</nodes>
