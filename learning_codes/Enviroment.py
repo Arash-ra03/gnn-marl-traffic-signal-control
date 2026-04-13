@@ -155,7 +155,8 @@ class Environment:
                 else:
                     traci.trafficlight.setProgram(tlsID=actor.name, programID="NS_S_GREEN")
                     actor.current_action = 0
-                actor.state = self.get_agent_state(actor.name, 0)
+                actor.state = self.get_agent_state(actor.name, actor.current_action)
+                actor.region_local_state = None
                 actor.next_time = GREEN_DURATION
                 actor.is_yellow = False
 
@@ -380,6 +381,75 @@ class Environment:
             done = True
 
         return next_states, rewards, done
+
+    def get_local_state(self, junction_id: str, action: int) -> List:
+        edge = [x for x in traci.junction.getIncomingEdges(junction_id) if "_" not in x]
+        if junction_id[0] in ['A', 'E']:
+            type = [1, 0, 0, 0, 0] if junction_id[0] == "A" else [0, 1, 0, 0, 0]
+            if junction_id[0] == "A":
+                edge_vertical = [edge[0], edge[1]]
+                edge_horizontal = [edge[2]]
+                left_lane_vertical = [f"{edge_vertical[1]}_2"]
+                left_lane_horizontal = [f"{edge_horizontal[0]}_2"]
+            else:
+                edge_vertical = [edge[1], edge[2]]
+                edge_horizontal = [edge[0]]
+                left_lane_vertical = [f"{edge_vertical[0]}_2"]
+                left_lane_horizontal = [f"{edge_horizontal[0]}_2"]
+
+            vertical_num_vehicle = (traci.edge.getLastStepHaltingNumber(edge_vertical[0]) +
+                                    traci.edge.getLastStepHaltingNumber(edge_vertical[1])) / 2
+            horizontal_num_vehicle = traci.edge.getLastStepHaltingNumber(edge_horizontal[0])
+
+            vertical_left_lane_num_vehicle = traci.lane.getLastStepHaltingNumber(left_lane_vertical[0])
+            horizontal_left_lane_num_vehicle = traci.lane.getLastStepHaltingNumber(left_lane_horizontal[0])
+
+        elif junction_id[1] in ['0', '4']:
+            type = [0, 0, 1, 0, 0] if junction_id[1] == "0" else [0, 0, 0, 1, 0]
+            edge_vertical = [edge[1]]
+            edge_horizontal = [edge[0], edge[2]]
+
+            if junction_id[1] == "0":
+                left_lane_vertical = [f"{edge_vertical[0]}_2"]
+                left_lane_horizontal = [f"{edge_horizontal[0]}_2"]
+            else:
+                left_lane_vertical = [f"{edge_vertical[0]}_2"]
+                left_lane_horizontal = [f"{edge_horizontal[1]}_2"]
+
+            vertical_num_vehicle = traci.edge.getLastStepHaltingNumber(edge_vertical[0])
+            horizontal_num_vehicle = (traci.edge.getLastStepHaltingNumber(edge_horizontal[0]) +
+                                      traci.edge.getLastStepHaltingNumber(edge_horizontal[1])) / 2
+
+            vertical_left_lane_num_vehicle = traci.lane.getLastStepHaltingNumber(left_lane_vertical[0])
+            horizontal_left_lane_num_vehicle = traci.lane.getLastStepHaltingNumber(left_lane_horizontal[0])
+
+        else:
+            type = [0, 0, 0, 0, 1]
+            edge_vertical = [edge[1], edge[2]]
+            edge_horizontal = [edge[0], edge[3]]
+
+            left_lane_vertical = [f"{edge_vertical[0]}_2", f"{edge_vertical[1]}_2"]
+            left_lane_horizontal = [f"{edge_horizontal[0]}_2", f"{edge_horizontal[1]}_2"]
+
+            vertical_num_vehicle = (traci.edge.getLastStepHaltingNumber(edge_vertical[0]) +
+                                    traci.edge.getLastStepHaltingNumber(edge_vertical[1])) / 2
+            horizontal_num_vehicle = (traci.edge.getLastStepHaltingNumber(edge_horizontal[0]) +
+                                      traci.edge.getLastStepHaltingNumber(edge_horizontal[1])) / 2
+
+            vertical_left_lane_num_vehicle = (traci.lane.getLastStepHaltingNumber(left_lane_vertical[0]) +
+                                              traci.lane.getLastStepHaltingNumber(left_lane_vertical[1])) / 2
+            horizontal_left_lane_num_vehicle = (traci.lane.getLastStepHaltingNumber(left_lane_horizontal[0]) +
+                                                traci.lane.getLastStepHaltingNumber(left_lane_horizontal[1])) / 2
+
+        state = [vertical_num_vehicle, horizontal_num_vehicle,
+                 vertical_left_lane_num_vehicle, horizontal_left_lane_num_vehicle]
+        state.extend(type)
+        state.extend(self._action_one_hot(action))
+        return state
+
+    def get_region_local_states(self, region_controller: RegionController) -> List[List[float]]:
+        return [self.get_local_state(actor.name, actor.current_action) for actor in region_controller.actors]
+
 
     def get_agent_state(self, junction_id: str, action: int) -> List:
         """
