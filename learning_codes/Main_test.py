@@ -60,7 +60,7 @@ np.random.seed(SEED)
 torch.manual_seed(SEED)
 # constants
 WINDOW_TIME = 50
-NUM_EPISODES = 10
+NUM_EPISODES = 400
 TOTAL_STEPS = 17999
 CHECKPOINT_DUMP_FREQ = 10
 
@@ -89,6 +89,8 @@ same_region_onehop_neighbors = {
     'E1': ["E2",None,None,None], 'E2': ["E3",None,"E1",None], 'E3': [None,None,"E2",None],
     'B2': [None,"C2",None,None], 'C2': [None,"D2",None,"B2"], 'D2': [None,None,None,"C2"]    
 }
+for region_controller in regions:
+    region_controller.set_graph(same_region_onehop_neighbors)
 
 
 
@@ -115,11 +117,19 @@ else:
 
 print(f"Starting training from episode {START_EPISODE}")
 env.start(region_controllers)
+
 # TRAIN
 for ep in range(START_EPISODE - 1, NUM_EPISODES):
     start_time = time.time()
     # Reset environment
     env.reset(region_controllers)
+    for region_controller in region_controllers.values():
+        region_local_state = env.get_region_local_states(region_controller)
+        for actor in region_controller.actors:
+            # keep actor.state as the handcrafted full state
+            actor.state = env.get_agent_state(actor.name, actor.current_action)
+            actor.region_local_state = [row[:] for row in region_local_state]
+
     done = False # episode done
     episode_reward = 0
     current_step = 0
@@ -144,21 +154,41 @@ for ep in range(START_EPISODE - 1, NUM_EPISODES):
                         actor.tls_state = traci.trafficlight.getProgram(actor.name)
                         # LOG
                         reward = env.get_actor_reward_onehop_centralized(actor.name)
-                        log_actor_action(actor.name, "change_logic",_create_actor_log_details(actor=actor, reward=reward, ep=ep))
+                        #log_actor_action(actor.name, "change_logic",_create_actor_log_details(actor=actor, reward=reward, ep=ep))
 
 
                     else:
                         state = actor.state
                         action = actor.current_action
                         reward = env.get_actor_reward_onehop_centralized(actor.name)
-                        episode_reward += reward #accumaltive reward
-                        next_state = env.get_agent_state(actor.name, actor.current_action)
-                        region_controller.store_transition(state=state, action=action, reward=reward,
-                                                           next_state=next_state, done=False,actor_type=actor.type)
+                        episode_reward += reward
 
-                        state = next_state
-                        actor.state = state
-                        action = region_controller.choose_action_for_junction(actor.state, actor.type)
+                        region_local_state = [row[:] for row in actor.region_local_state]
+                        next_state = env.get_agent_state(actor.name, actor.current_action)
+                        next_region_local_state = env.get_region_local_states(region_controller)
+                        actor_index = region_controller.agent_id_to_idx[actor.name]
+
+                        region_controller.store_transition(
+                            state=state,
+                            action=action,
+                            reward=reward,
+                            next_state=next_state,
+                            done=False,
+                            actor_type=actor.type,
+                            region_local_state=region_local_state,
+                            next_region_local_state=next_region_local_state,
+                            actor_index=actor_index
+                        )
+
+                        actor.state = next_state
+                        actor.region_local_state = [row[:] for row in next_region_local_state]
+
+                        action = region_controller.choose_action_for_junction(
+                            actor.state,
+                            actor.type,
+                            actor.region_local_state,
+                            actor_index
+                        )
 
                         if action in SOFT_TRANSITION[actor.current_action]:
                             actor.is_yellow = False
@@ -168,13 +198,11 @@ for ep in range(START_EPISODE - 1, NUM_EPISODES):
                             if _is_extend(action):
                                 env.extend_logic(actor.name, actor.type, action)
                                 actor.next_time = current_step + EXTEND_DURATION
-                                log_actor_action(actor.name, "Extend",
-                                                 _create_actor_log_details(actor=actor, reward=reward, ep=ep))
+                                #log_actor_action(actor.name, "Extend",_create_actor_log_details(actor=actor, reward=reward, ep=ep))
                             else:
                                 env.change_logic(actor.name, actor.type, action)
                                 actor.next_time = current_step + GREEN_DURATION
-                                log_actor_action(actor.name, "Full",
-                                             _create_actor_log_details(actor=actor, reward=reward, ep=ep))
+                                #log_actor_action(actor.name, "Full",_create_actor_log_details(actor=actor, reward=reward, ep=ep))
 
 
 
@@ -186,7 +214,7 @@ for ep in range(START_EPISODE - 1, NUM_EPISODES):
                             actor.tls_state = traci.trafficlight.getProgram(actor.name)
                             # LOG
                             reward = env.get_actor_reward_onehop_centralized(actor.name)
-                            log_actor_action(actor.name, "set_yellow_logic",_create_actor_log_details(actor=actor, reward=reward, ep=ep))
+                            #log_actor_action(actor.name, "set_yellow_logic",_create_actor_log_details(actor=actor, reward=reward, ep=ep))
 
         traci.simulationStep()
         current_step += 1
@@ -207,7 +235,7 @@ for ep in range(START_EPISODE - 1, NUM_EPISODES):
                 region_controller.episode_data.append(log_entry)
         if traci.simulation.getTime() >= TOTAL_STEPS:
             done=True
-    plot_and_summarize_episode(ep + 1, region_controllers,NUM_EPISODES)
+    #plot_and_summarize_episode(ep + 1, region_controllers,NUM_EPISODES)
     # Decay epsilon for each agent
     for region_id, agent in region_controllers.items():
         agent.update_epsilon()
