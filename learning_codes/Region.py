@@ -8,11 +8,15 @@ import random
 from tls_states import GREEN_DURATION
 from tls_states import VALID_ACTIONS
 from DQN import DQN
+from GNNEncoder import GNNEncoder
 from typing import NamedTuple, List
 import logging, os, json
 
-DIM_STATE = 9 + 8 + 2 + (4 * 13)
-N_ACTION = 4*2
+OLD_STATE_DIM = 9 + 8 + 2 + (4 * 13)   # existing handcrafted full state
+LOCAL_STATE_DIM = 4 + 5 + 8            # local-only state for GNN nodes
+GNN_HIDDEN_DIM = 16
+DIM_STATE = OLD_STATE_DIM + GNN_HIDDEN_DIM
+N_ACTION = 4 * 2
 INIT_TLS_STATE = "NS_S"
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 MEMORY_REP_SIZE = 50000
@@ -20,12 +24,15 @@ BATCH_SIZE = 64
 
 
 class SingleTransition(NamedTuple):
-    state: List[float]
+    state: List[float]                    # old handcrafted full state
     action: int
     reward: float
-    next_state: List[float]
+    next_state: List[float]               # old handcrafted next full state
     done: bool
     actor_type: str
+    region_local_state: List[List[float]]
+    next_region_local_state: List[List[float]]
+    actor_index: int
 
 
 class ReplayMemory:
@@ -44,14 +51,15 @@ class ReplayMemory:
 
 # contains metadata of each single actor
 class Actor:
-    def __init__(self, name, type_, tls_state, next_time, current_action, state, is_yellow):
+    def __init__(self, name, type_, tls_state, next_time, current_action, state, is_yellow, region_local_state=None):
         self.name = name
         self.type = type_
         self.tls_state = tls_state
         self.next_time = next_time
         self.current_action = current_action
-        self.state = state
+        self.state = state  # old handcrafted full state
         self.is_yellow = is_yellow
+        self.region_local_state = region_local_state
 
 # next_time stores next time that actor should choose its next action
 # is_yellow shows actor is in yellow phase or not
@@ -88,15 +96,28 @@ class RegionController:
         self.learning_rate = 0.00025
         self.target_update = 1000  # Episodes between target network updates
 
+        self.policy_gnn = GNNEncoder(LOCAL_STATE_DIM, GNN_HIDDEN_DIM).to(device)
+        self.target_gnn = GNNEncoder(LOCAL_STATE_DIM, GNN_HIDDEN_DIM).to(device)
+
         self.policy_net = DQN(DIM_STATE, N_ACTION).to(device)
         self.target_net = DQN(DIM_STATE, N_ACTION).to(device)
+
+        self.target_gnn.load_state_dict(self.policy_gnn.state_dict())
         self.target_net.load_state_dict(self.policy_net.state_dict())
-        self.target_net.eval()  # Target network in evaluation mode
+        self.target_gnn.eval()
+        self.target_net.eval()
 
-        self.update_step = 0 # Tracks the number of training steps performed
+        self.update_step = 0
 
-        self.optimizer = optim.Adam(self.policy_net.parameters(), lr=self.learning_rate)
+        self.optimizer = optim.Adam(
+            list(self.policy_gnn.parameters()) + list(self.policy_net.parameters()),
+            lr=self.learning_rate
+        )
         self.memory = ReplayMemory(MEMORY_REP_SIZE)
+
+        self.agent_ids = agent_ids
+        self.agent_id_to_idx = {aid: idx for idx, aid in enumerate(agent_ids)}
+        self.edge_index = None
 
         #TODO initialize next_time and chosen_action
         for i in range(len(agent_ids)):
@@ -121,7 +142,44 @@ class RegionController:
                     Actor(name=agent_ids[i], type_="4", tls_state="NS_S", next_time= GREEN_DURATION, current_action = None, state = None, is_yellow = False)
                 )
 
+    def set_graph(self, neighbors_map):
+        self.edge_index = self._build_edge_index(neighbors_map).to(device)
 
+    def _build_edge_index(self, neighbors_map):
+        edges = []
+
+        for src in self.agent_ids:
+            src_idx = self.agent_id_to_idx[src]
+            for dst in neighbors_map[src]:
+                if dst is None:
+                    continue
+                if dst not in self.agent_id_to_idx:
+                    continue
+                dst_idx = self.agent_id_to_idx[dst]
+                edges.append([src_idx, dst_idx])
+
+        for i in range(len(self.agent_ids)):
+            edges.append([i, i])  # self-loops
+
+        return torch.tensor(edges, dtype=torch.long).t().contiguous()
+
+    def _build_augmented_state(self, single_state, region_local_state, actor_index, use_target=False):
+        if self.edge_index is None:
+            raise ValueError("edge_index is not set. Call set_graph(...) first.")
+
+        region_local_tensor = torch.tensor(region_local_state, dtype=torch.float32, device=device)
+
+        if use_target:
+            gnn_out = self.target_gnn(region_local_tensor, self.edge_index)
+        else:
+            gnn_out = self.policy_gnn(region_local_tensor, self.edge_index)
+
+        gnn_embed = gnn_out[actor_index]  # [GNN_HIDDEN_DIM]
+
+        single_state_tensor = torch.tensor(single_state, dtype=torch.float32, device=device)
+        augmented_state = torch.cat([single_state_tensor, gnn_embed], dim=0)  # [OLD_STATE_DIM + GNN_HIDDEN_DIM]
+
+        return augmented_state.unsqueeze(0)  # [1, DIM_STATE]
 
     def choose_action(self, region_state: List[List]) -> List:
         if random.random() < self.epsilon:
@@ -136,10 +194,9 @@ class RegionController:
             return actions
         else:
             # Convert the 2D list of actor states to a tensor of shape (num_actors, state_dim)
-            state_tensor = self._to_tensor(region_state)
+            state_tensor = self._to_tensor(region_state).to(device)
             with torch.no_grad():
-                # The policy network returns a tensor of shape (num_actors, num_actions)
-                q_values = self.policy_net(state_tensor)
+                q_values = self._forward_q(state_tensor, use_target=False)
 
             actions = []
             for i, actor in enumerate(self.actors):
@@ -162,37 +219,29 @@ class RegionController:
 
             return actions
 
-    def choose_action_for_junction(self, single_state: List[float], actor_type: str) -> int:
-        """
-        Decide an action for one junction, given its single-state vector and its type.
-        Returns the chosen action (integer).
-        """
-        # With probability epsilon, choose a random valid action
+    def choose_action_for_junction(self, single_state: List[float], actor_type: str, region_local_state,
+                                   actor_index: int) -> int:
         if random.random() < self.epsilon:
             valid_actions = VALID_ACTIONS[actor_type]
             return random.choice(valid_actions)
-        else:
-            # Convert the single-state to a tensor of shape (1, state_dim)
-            state_tensor = torch.tensor([single_state], dtype=torch.float32, device=device)
 
-            # Forward pass through the policy network
-            with torch.no_grad():
-                q_values = self.policy_net(state_tensor)
-                # q_values will have shape (1, num_actions)
+        with torch.no_grad():
+            state_tensor = self._build_augmented_state(
+                single_state=single_state,
+                region_local_state=region_local_state,
+                actor_index=actor_index,
+                use_target=False
+            )
+            q_values = self.policy_net(state_tensor)
 
-            q_values_for_junction = q_values[0]  # shape: (num_actions, )
+        q_values_for_junction = q_values[0]
 
-            # Mask out invalid actions
-            mask = torch.full(q_values_for_junction.shape, float('-inf')).to(device)
-            valid_actions = VALID_ACTIONS[actor_type]
-            mask[valid_actions] = 0.0
+        mask = torch.full(q_values_for_junction.shape, float('-inf'), device=device)
+        valid_actions = VALID_ACTIONS[actor_type]
+        mask[valid_actions] = 0.0
 
-            # Apply the mask
-            masked_q_values = q_values_for_junction + mask
-
-            # Choose the argmax
-            action = torch.argmax(masked_q_values).item()
-            return action
+        masked_q_values = q_values_for_junction + mask
+        return torch.argmax(masked_q_values).item()
 
     def _to_tensor(self, region_state: List[List]) -> torch.Tensor:
         """Helper function to convert region state list to tensor for the model."""
@@ -204,9 +253,14 @@ class RegionController:
                          reward: float,
                          next_state: List[float],
                          done: bool,
-                         actor_type: str):
-        """Store ONE junction's transition."""
-        self.memory.push(state, action, reward, next_state, done,actor_type)
+                         actor_type: str,
+                         region_local_state,
+                         next_region_local_state,
+                         actor_index: int):
+        self.memory.push(
+            state, action, reward, next_state, done, actor_type,
+            region_local_state, next_region_local_state, actor_index
+        )
 
     def train_step(self):
         if len(self.memory) < BATCH_SIZE:
@@ -214,68 +268,54 @@ class RegionController:
 
         batch = self.memory.sample(BATCH_SIZE)
 
-        # Now each item in 'batch' is a SingleTransition
-        # We'll gather them into arrays
-        states_list = []
-        actions_list = []
-        rewards_list = []
-        next_states_list = []
-        dones_list = []
-        actor_types_list = []
+        self.optimizer.zero_grad()
+        total_loss = 0.0
 
         for transition in batch:
-            states_list.append(torch.tensor(transition.state, dtype=torch.float32))
-            actions_list.append(transition.action)
-            rewards_list.append(transition.reward)
-            next_states_list.append(torch.tensor(transition.next_state, dtype=torch.float32))
-            dones_list.append(1.0 if transition.done else 0.0)
-            actor_types_list.append(transition.actor_type)
+            current_state_tensor = self._build_augmented_state(
+                single_state=transition.state,
+                region_local_state=transition.region_local_state,
+                actor_index=transition.actor_index,
+                use_target=False
+            )
+            current_q_values = self.policy_net(current_state_tensor)
+            chosen_q = current_q_values[0, transition.action]
 
-        # Stack into tensors
-        states_tensor = torch.stack(states_list).to(device)  # shape (B, state_dim)
-        next_states_tensor = torch.stack(next_states_list).to(device)  # shape (B, state_dim)
+            with torch.no_grad():
+                next_state_policy_tensor = self._build_augmented_state(
+                    single_state=transition.next_state,
+                    region_local_state=transition.next_region_local_state,
+                    actor_index=transition.actor_index,
+                    use_target=False
+                )
+                next_q_values_policy = self.policy_net(next_state_policy_tensor)[0]
 
-        actions_tensor = torch.tensor(actions_list, dtype=torch.long).to(device)
-        rewards_tensor = torch.tensor(rewards_list, dtype=torch.float32).to(device)
-        dones_tensor = torch.tensor(dones_list, dtype=torch.float32).to(device)
+                mask = torch.full(next_q_values_policy.shape, float('-inf'), device=device)
+                valid_actions = VALID_ACTIONS[transition.actor_type]
+                mask[valid_actions] = 0.0
+                best_action = torch.argmax(next_q_values_policy + mask).item()
 
-        # Forward pass for current Q
-        current_q_values = self.policy_net(states_tensor)  # shape (B, num_actions)
-        # Gather the Q-value for each chosen action - already masked so its valid
-        chosen_q = current_q_values.gather(1, actions_tensor.unsqueeze(1)).squeeze(1)
+                next_state_target_tensor = self._build_augmented_state(
+                    single_state=transition.next_state,
+                    region_local_state=transition.next_region_local_state,
+                    actor_index=transition.actor_index,
+                    use_target=True
+                )
+                next_q_values_target = self.target_net(next_state_target_tensor)[0]
+                max_next_q = next_q_values_target[best_action]
 
-        # Next Q (with Action Masking for Double DQN)
-        with torch.no_grad():
-            # 1. Get the Q-values for the next states from the policy network
-            next_q_values_policy = self.policy_net(next_states_tensor) # Shape: (B, N_ACTION)
+                target_q = transition.reward + self.gamma * max_next_q * (1 - float(transition.done))
 
-            # 2. Create a mask for the batch based on each transition's actor_type
-            batch_mask = torch.full_like(next_q_values_policy, float('-inf'))
-            for i, actor_type in enumerate(actor_types_list):
-                valid_actions = VALID_ACTIONS[actor_type]
-                batch_mask[i, valid_actions] = 0.0
+            total_loss = total_loss + nn.MSELoss()(chosen_q, target_q)
 
-            # 3. Apply the mask to find the best *valid* actions
-            masked_next_q_values = next_q_values_policy + batch_mask
-            best_actions = masked_next_q_values.argmax(dim=1)
+        loss = total_loss / len(batch)
 
-            # 4. Use the target network to get the Q-value of these best actions
-            next_q_values_target = self.target_net(next_states_tensor)
-            max_next_q = next_q_values_target.gather(1, best_actions.unsqueeze(1)).squeeze(1)
-            # next_q_values = self.target_net(next_states_tensor)
-            # max_next_q, _ = next_q_values.max(dim=1)
-
-        target_q = rewards_tensor + self.gamma * max_next_q * (1 - dones_tensor)
-
-        # Compute loss
-        loss = nn.MSELoss()(chosen_q, target_q)
-
-        self.optimizer.zero_grad()
         loss.backward()
         self.optimizer.step()
 
         self.update_step += 1
         if self.update_step % self.target_update == 0:
+            self.target_gnn.load_state_dict(self.policy_gnn.state_dict())
             self.target_net.load_state_dict(self.policy_net.state_dict())
 
         return loss.item()
