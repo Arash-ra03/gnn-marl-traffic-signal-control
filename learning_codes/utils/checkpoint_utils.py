@@ -49,6 +49,8 @@ def load_checkpoint(
 
         torch_state = torch.load(ckpt_pth, map_location=map_location)
 
+        controller.policy_gnn.load_state_dict(torch_state["policy_gnn_state_dict"])
+        controller.target_gnn.load_state_dict(torch_state["target_gnn_state_dict"])
         controller.policy_net.load_state_dict(torch_state["policy_net_state_dict"])
         controller.target_net.load_state_dict(torch_state["target_net_state_dict"])
         controller.optimizer.load_state_dict(torch_state["optimizer_state_dict"])
@@ -108,6 +110,8 @@ def save_checkpoint(
 
         # 2. Prepare the state dictionary for PyTorch components
         torch_state = {
+            'policy_gnn_state_dict': controller.policy_gnn.state_dict(),
+            'target_gnn_state_dict': controller.target_gnn.state_dict(),
             'policy_net_state_dict': controller.policy_net.state_dict(),
             'target_net_state_dict': controller.target_net.state_dict(),
             'optimizer_state_dict': controller.optimizer.state_dict(),
@@ -375,6 +379,8 @@ def update_top5_checkpoints(region_controllers: Dict[int, RegionController], epi
                             checkpoint_filepath = target_dir / f"region_{region_id}_checkpoint.pth"
                             memory_filepath = target_dir / f"region_{region_id}_memory.pkl"
                             torch_state = {
+                                'policy_gnn_state_dict': controller.policy_gnn.state_dict(),
+                                'target_gnn_state_dict': controller.target_gnn.state_dict(),
                                 'policy_net_state_dict': controller.policy_net.state_dict(),
                                 'target_net_state_dict': controller.target_net.state_dict(),
                                 'optimizer_state_dict': controller.optimizer.state_dict(),
