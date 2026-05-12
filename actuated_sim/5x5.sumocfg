@@ -7,7 +7,7 @@
 
     <input>
         <net-file value="actuated.net.xml"/>
-        <route-files value="../traffic_flows/5x5_200_1.rou.xml"/>
+        <route-files value="../traffic_flows/5x5_220_1.rou.xml"/>
     </input>
 
     <time>
