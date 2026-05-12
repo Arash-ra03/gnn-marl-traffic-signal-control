@@ -1,0 +1,50 @@
+Episode 401:
+  Average meanTravelTime : 257.12325563238477
+  Average waitingTime: 30.02207409026336
+  Runtime: 3 minute(s) and 33.61 second(s)
+
+Episode 402:
+  Average meanTravelTime : 257.08728012938417
+  Average waitingTime: 29.919097563640335
+  Runtime: 4 minute(s) and 22.57 second(s)
+
+Episode 403:
+  Average meanTravelTime : 257.43772126484646
+  Average waitingTime: 30.170463858383872
+  Runtime: 3 minute(s) and 53.18 second(s)
+
+Episode 404:
+  Average meanTravelTime : 256.7823690814762
+  Average waitingTime: 30.006118212607888
+  Runtime: 3 minute(s) and 40.85 second(s)
+
+Episode 405:
+  Average meanTravelTime : 257.30448248940536
+  Average waitingTime: 30.0521914963384
+  Runtime: 4 minute(s) and 9.31 second(s)
+
+Episode 406:
+  Average meanTravelTime : 257.29498940323214
+  Average waitingTime: 30.10016393442623
+  Runtime: 3 minute(s) and 33.48 second(s)
+
+Episode 407:
+  Average meanTravelTime : 257.24090513636145
+  Average waitingTime: 30.119803332422837
+  Runtime: 3 minute(s) and 41.20 second(s)
+
+Episode 408:
+  Average meanTravelTime : 257.5712341066238
+  Average waitingTime: 30.292706910680142
+  Runtime: 3 minute(s) and 32.03 second(s)
+
+Episode 409:
+  Average meanTravelTime : 257.1299977692225
+  Average waitingTime: 29.94459621899246
+  Runtime: 3 minute(s) and 52.10 second(s)
+
+Episode 410:
+  Average meanTravelTime : 256.7439679883984
+  Average waitingTime: 29.70445233542748
+  Runtime: 4 minute(s) and 0.77 second(s)
+

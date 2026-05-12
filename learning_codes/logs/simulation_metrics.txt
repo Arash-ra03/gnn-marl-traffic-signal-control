@@ -1,0 +1,5 @@
+Episode 401:
+  Average meanTravelTime : 303.4341764246688
+  Average waitingTime: 236.2332388500029
+  Runtime: 4 minute(s) and 10.18 second(s)
+
