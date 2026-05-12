@@ -1,0 +1,1999 @@
+Episode 1:
+  Average meanTravelTime : 446.0904800623731
+  Average waitingTime: 215.9289576554856
+  Runtime: 2 minute(s) and 29.55 second(s)
+
+Episode 2:
+  Average meanTravelTime : 430.8112107373544
+  Average waitingTime: 198.42493460388638
+  Runtime: 2 minute(s) and 21.88 second(s)
+
+Episode 3:
+  Average meanTravelTime : 426.5780687197176
+  Average waitingTime: 190.6119472531569
+  Runtime: 2 minute(s) and 17.55 second(s)
+
+Episode 4:
+  Average meanTravelTime : 419.42786705298994
+  Average waitingTime: 182.7030849527005
+  Runtime: 2 minute(s) and 19.70 second(s)
+
+Episode 5:
+  Average meanTravelTime : 411.99142451411427
+  Average waitingTime: 178.84772600446428
+  Runtime: 2 minute(s) and 24.50 second(s)
+
+Episode 6:
+  Average meanTravelTime : 410.5821191351838
+  Average waitingTime: 173.91267808920756
+  Runtime: 2 minute(s) and 17.25 second(s)
+
+Episode 7:
+  Average meanTravelTime : 413.1581342992502
+  Average waitingTime: 176.75205170529838
+  Runtime: 2 minute(s) and 13.56 second(s)
+
+Episode 8:
+  Average meanTravelTime : 413.2345084707987
+  Average waitingTime: 176.3253947949857
+  Runtime: 2 minute(s) and 17.82 second(s)
+
+Episode 9:
+  Average meanTravelTime : 406.1014923376949
+  Average waitingTime: 170.89855746859004
+  Runtime: 2 minute(s) and 18.98 second(s)
+
+Episode 10:
+  Average meanTravelTime : 395.70060373155235
+  Average waitingTime: 161.85161245320748
+  Runtime: 2 minute(s) and 14.82 second(s)
+
+Episode 11:
+  Average meanTravelTime : 391.06610383822374
+  Average waitingTime: 155.91813830281626
+  Runtime: 2 minute(s) and 16.73 second(s)
+
+Episode 12:
+  Average meanTravelTime : 399.7910414346123
+  Average waitingTime: 161.26382137457844
+  Runtime: 2 minute(s) and 18.24 second(s)
+
+Episode 13:
+  Average meanTravelTime : 397.6645363352634
+  Average waitingTime: 157.315900797248
+  Runtime: 2 minute(s) and 16.07 second(s)
+
+Episode 14:
+  Average meanTravelTime : 388.4034189271999
+  Average waitingTime: 153.16186139441953
+  Runtime: 2 minute(s) and 17.36 second(s)
+
+Episode 15:
+  Average meanTravelTime : 387.39173731409437
+  Average waitingTime: 151.19447868455939
+  Runtime: 2 minute(s) and 17.67 second(s)
+
+Episode 16:
+  Average meanTravelTime : 386.5079852867381
+  Average waitingTime: 147.92649108138238
+  Runtime: 2 minute(s) and 10.28 second(s)
+
+Episode 17:
+  Average meanTravelTime : 384.76704351702085
+  Average waitingTime: 147.43523833871754
+  Runtime: 2 minute(s) and 15.57 second(s)
+
+Episode 18:
+  Average meanTravelTime : 380.29983619345285
+  Average waitingTime: 144.80265112823847
+  Runtime: 2 minute(s) and 12.97 second(s)
+
+Episode 19:
+  Average meanTravelTime : 380.0859933166284
+  Average waitingTime: 141.97930250365454
+  Runtime: 2 minute(s) and 11.29 second(s)
+
+Episode 20:
+  Average meanTravelTime : 375.6885487465187
+  Average waitingTime: 141.5843362297291
+  Runtime: 2 minute(s) and 21.26 second(s)
+
+Episode 21:
+  Average meanTravelTime : 377.65161635290127
+  Average waitingTime: 139.8761517929674
+  Runtime: 2 minute(s) and 17.14 second(s)
+
+Episode 22:
+  Average meanTravelTime : 373.1879335711116
+  Average waitingTime: 137.57629873899816
+  Runtime: 2 minute(s) and 15.13 second(s)
+
+Episode 23:
+  Average meanTravelTime : 371.7153708967298
+  Average waitingTime: 136.95510128315195
+  Runtime: 2 minute(s) and 13.42 second(s)
+
+Episode 24:
+  Average meanTravelTime : 376.0946580839317
+  Average waitingTime: 137.99609910140015
+  Runtime: 2 minute(s) and 13.64 second(s)
+
+Episode 25:
+  Average meanTravelTime : 370.6719242339775
+  Average waitingTime: 132.6738964021434
+  Runtime: 2 minute(s) and 13.20 second(s)
+
+Episode 26:
+  Average meanTravelTime : 371.0460201693801
+  Average waitingTime: 133.16316399907214
+  Runtime: 2 minute(s) and 13.14 second(s)
+
+Episode 27:
+  Average meanTravelTime : 365.51642713904334
+  Average waitingTime: 128.91840426765626
+  Runtime: 2 minute(s) and 12.62 second(s)
+
+Episode 28:
+  Average meanTravelTime : 364.2835656582532
+  Average waitingTime: 128.99307765569466
+  Runtime: 2 minute(s) and 15.48 second(s)
+
+Episode 29:
+  Average meanTravelTime : 364.72495905976695
+  Average waitingTime: 128.71983758700696
+  Runtime: 2 minute(s) and 14.06 second(s)
+
+Episode 30:
+  Average meanTravelTime : 365.0609043826913
+  Average waitingTime: 125.13317095801438
+  Runtime: 2 minute(s) and 16.17 second(s)
+
+Episode 31:
+  Average meanTravelTime : 362.2166310160397
+  Average waitingTime: 127.26986962371828
+  Runtime: 2 minute(s) and 17.62 second(s)
+
+Episode 32:
+  Average meanTravelTime : 362.0933314769489
+  Average waitingTime: 123.56490585288934
+  Runtime: 2 minute(s) and 14.71 second(s)
+
+Episode 33:
+  Average meanTravelTime : 357.42996380040444
+  Average waitingTime: 122.41380909322761
+  Runtime: 2 minute(s) and 14.87 second(s)
+
+Episode 34:
+  Average meanTravelTime : 359.1526563805524
+  Average waitingTime: 122.20594096111961
+  Runtime: 2 minute(s) and 15.22 second(s)
+
+Episode 35:
+  Average meanTravelTime : 362.279342281131
+  Average waitingTime: 123.92928801464285
+  Runtime: 2 minute(s) and 15.03 second(s)
+
+Episode 36:
+  Average meanTravelTime : 360.27657080755984
+  Average waitingTime: 120.62077277889809
+  Runtime: 2 minute(s) and 15.96 second(s)
+
+Episode 37:
+  Average meanTravelTime : 354.8171485854366
+  Average waitingTime: 119.38782088444681
+  Runtime: 2 minute(s) and 16.67 second(s)
+
+Episode 38:
+  Average meanTravelTime : 355.76667168255176
+  Average waitingTime: 118.49787796563
+  Runtime: 2 minute(s) and 14.48 second(s)
+
+Episode 39:
+  Average meanTravelTime : 357.65072299893995
+  Average waitingTime: 122.8066521315582
+  Runtime: 2 minute(s) and 16.34 second(s)
+
+Episode 40:
+  Average meanTravelTime : 355.6406726857258
+  Average waitingTime: 118.139058736335
+  Runtime: 2 minute(s) and 15.25 second(s)
+
+Episode 41:
+  Average meanTravelTime : 353.3478136320591
+  Average waitingTime: 114.77106621305747
+  Runtime: 2 minute(s) and 14.44 second(s)
+
+Episode 42:
+  Average meanTravelTime : 353.0416212450553
+  Average waitingTime: 114.62986817413062
+  Runtime: 2 minute(s) and 14.53 second(s)
+
+Episode 43:
+  Average meanTravelTime : 349.69730145459806
+  Average waitingTime: 112.76089323357039
+  Runtime: 2 minute(s) and 14.18 second(s)
+
+Episode 44:
+  Average meanTravelTime : 352.05589589254953
+  Average waitingTime: 114.31285058643549
+  Runtime: 2 minute(s) and 16.32 second(s)
+
+Episode 45:
+  Average meanTravelTime : 350.63905255531574
+  Average waitingTime: 113.44901788196053
+  Runtime: 2 minute(s) and 15.67 second(s)
+
+Episode 46:
+  Average meanTravelTime : 350.25264504264345
+  Average waitingTime: 112.76319933308633
+  Runtime: 2 minute(s) and 13.34 second(s)
+
+Episode 47:
+  Average meanTravelTime : 346.52681881514184
+  Average waitingTime: 109.74826292384658
+  Runtime: 2 minute(s) and 13.41 second(s)
+
+Episode 48:
+  Average meanTravelTime : 349.04225659031243
+  Average waitingTime: 111.8464406465657
+  Runtime: 2 minute(s) and 14.41 second(s)
+
+Episode 49:
+  Average meanTravelTime : 347.9403511118533
+  Average waitingTime: 110.46502467619732
+  Runtime: 2 minute(s) and 15.76 second(s)
+
+Episode 50:
+  Average meanTravelTime : 349.49886139441213
+  Average waitingTime: 111.43564746202297
+  Runtime: 2 minute(s) and 15.24 second(s)
+
+Episode 51:
+  Average meanTravelTime : 345.01406063645817
+  Average waitingTime: 108.65375611339036
+  Runtime: 2 minute(s) and 15.70 second(s)
+
+Episode 52:
+  Average meanTravelTime : 344.490148247225
+  Average waitingTime: 107.3836711059641
+  Runtime: 2 minute(s) and 13.92 second(s)
+
+Episode 53:
+  Average meanTravelTime : 344.4305066042517
+  Average waitingTime: 107.36164053634701
+  Runtime: 2 minute(s) and 14.83 second(s)
+
+Episode 54:
+  Average meanTravelTime : 343.0206041353221
+  Average waitingTime: 105.86745425063701
+  Runtime: 2 minute(s) and 14.45 second(s)
+
+Episode 55:
+  Average meanTravelTime : 343.6138995708632
+  Average waitingTime: 106.3855307327237
+  Runtime: 2 minute(s) and 14.03 second(s)
+
+Episode 56:
+  Average meanTravelTime : 343.1210232402581
+  Average waitingTime: 106.52873376999098
+  Runtime: 2 minute(s) and 15.41 second(s)
+
+Episode 57:
+  Average meanTravelTime : 342.4515025358167
+  Average waitingTime: 105.01933586513523
+  Runtime: 2 minute(s) and 13.85 second(s)
+
+Episode 58:
+  Average meanTravelTime : 341.33058128518104
+  Average waitingTime: 103.93227285357044
+  Runtime: 2 minute(s) and 13.48 second(s)
+
+Episode 59:
+  Average meanTravelTime : 341.9119188541511
+  Average waitingTime: 104.13372860550756
+  Runtime: 2 minute(s) and 13.69 second(s)
+
+Episode 60:
+  Average meanTravelTime : 339.3248258373704
+  Average waitingTime: 103.54344754094564
+  Runtime: 2 minute(s) and 15.45 second(s)
+
+Episode 61:
+  Average meanTravelTime : 341.5785102825515
+  Average waitingTime: 103.4875547014286
+  Runtime: 2 minute(s) and 14.53 second(s)
+
+Episode 62:
+  Average meanTravelTime : 339.94388062196833
+  Average waitingTime: 103.57178911296857
+  Runtime: 2 minute(s) and 14.93 second(s)
+
+Episode 63:
+  Average meanTravelTime : 337.93559382488655
+  Average waitingTime: 101.27159064598287
+  Runtime: 2 minute(s) and 13.78 second(s)
+
+Episode 64:
+  Average meanTravelTime : 337.33546229727625
+  Average waitingTime: 100.0878841169937
+  Runtime: 2 minute(s) and 14.59 second(s)
+
+Episode 65:
+  Average meanTravelTime : 339.06370005015617
+  Average waitingTime: 100.19150118039161
+  Runtime: 2 minute(s) and 14.31 second(s)
+
+Episode 66:
+  Average meanTravelTime : 339.8865797246834
+  Average waitingTime: 101.07950440018527
+  Runtime: 2 minute(s) and 13.70 second(s)
+
+Episode 67:
+  Average meanTravelTime : 334.92717327091384
+  Average waitingTime: 99.59803331790837
+  Runtime: 2 minute(s) and 15.08 second(s)
+
+Episode 68:
+  Average meanTravelTime : 336.0933985398201
+  Average waitingTime: 99.23959731543624
+  Runtime: 2 minute(s) and 14.54 second(s)
+
+Episode 69:
+  Average meanTravelTime : 338.8372061528149
+  Average waitingTime: 98.76279188169678
+  Runtime: 2 minute(s) and 15.25 second(s)
+
+Episode 70:
+  Average meanTravelTime : 334.58158724850625
+  Average waitingTime: 96.88279948157748
+  Runtime: 2 minute(s) and 16.63 second(s)
+
+Episode 71:
+  Average meanTravelTime : 334.71055453379944
+  Average waitingTime: 96.94252554034331
+  Runtime: 2 minute(s) and 14.22 second(s)
+
+Episode 72:
+  Average meanTravelTime : 335.43050158836155
+  Average waitingTime: 97.79767608730876
+  Runtime: 2 minute(s) and 15.98 second(s)
+
+Episode 73:
+  Average meanTravelTime : 333.5937000501584
+  Average waitingTime: 96.13710106690736
+  Runtime: 2 minute(s) and 18.18 second(s)
+
+Episode 74:
+  Average meanTravelTime : 333.5732948782239
+  Average waitingTime: 95.82137234929161
+  Runtime: 2 minute(s) and 18.44 second(s)
+
+Episode 75:
+  Average meanTravelTime : 333.5263350610325
+  Average waitingTime: 96.2650680492547
+  Runtime: 2 minute(s) and 18.62 second(s)
+
+Episode 76:
+  Average meanTravelTime : 338.1912144011599
+  Average waitingTime: 97.4325806302346
+  Runtime: 2 minute(s) and 14.85 second(s)
+
+Episode 77:
+  Average meanTravelTime : 334.02590480967785
+  Average waitingTime: 96.06912911661922
+  Runtime: 2 minute(s) and 14.91 second(s)
+
+Episode 78:
+  Average meanTravelTime : 332.38557431867616
+  Average waitingTime: 95.00210721315271
+  Runtime: 2 minute(s) and 14.66 second(s)
+
+Episode 79:
+  Average meanTravelTime : 332.3536471047211
+  Average waitingTime: 94.93643920624262
+  Runtime: 2 minute(s) and 14.48 second(s)
+
+Episode 80:
+  Average meanTravelTime : 331.0444117483157
+  Average waitingTime: 93.85732808520491
+  Runtime: 2 minute(s) and 16.83 second(s)
+
+Episode 81:
+  Average meanTravelTime : 333.9033595273913
+  Average waitingTime: 95.91082714077366
+  Runtime: 2 minute(s) and 16.74 second(s)
+
+Episode 82:
+  Average meanTravelTime : 330.54960095858775
+  Average waitingTime: 94.3739816700611
+  Runtime: 2 minute(s) and 14.67 second(s)
+
+Episode 83:
+  Average meanTravelTime : 332.6888686395763
+  Average waitingTime: 95.62843527343388
+  Runtime: 2 minute(s) and 15.96 second(s)
+
+Episode 84:
+  Average meanTravelTime : 332.51331717104284
+  Average waitingTime: 93.57808561319118
+  Runtime: 2 minute(s) and 17.71 second(s)
+
+Episode 85:
+  Average meanTravelTime : 329.9155497965764
+  Average waitingTime: 92.53483853058204
+  Runtime: 2 minute(s) and 18.22 second(s)
+
+Episode 86:
+  Average meanTravelTime : 330.39011369335367
+  Average waitingTime: 92.10821439311573
+  Runtime: 2 minute(s) and 19.36 second(s)
+
+Episode 87:
+  Average meanTravelTime : 330.2641598394974
+  Average waitingTime: 93.1258180136432
+  Runtime: 2 minute(s) and 16.22 second(s)
+
+Episode 88:
+  Average meanTravelTime : 328.302471715991
+  Average waitingTime: 91.00148038490008
+  Runtime: 2 minute(s) and 16.00 second(s)
+
+Episode 89:
+  Average meanTravelTime : 327.40930948002074
+  Average waitingTime: 90.57945265690425
+  Runtime: 2 minute(s) and 14.08 second(s)
+
+Episode 90:
+  Average meanTravelTime : 328.5162196957017
+  Average waitingTime: 91.04719272676799
+  Runtime: 2 minute(s) and 15.42 second(s)
+
+Episode 91:
+  Average meanTravelTime : 329.28815471214045
+  Average waitingTime: 92.10541172115407
+  Runtime: 2 minute(s) and 17.06 second(s)
+
+Episode 92:
+  Average meanTravelTime : 327.84485314607514
+  Average waitingTime: 89.62807699426244
+  Runtime: 2 minute(s) and 16.29 second(s)
+
+Episode 93:
+  Average meanTravelTime : 328.05125842946836
+  Average waitingTime: 90.58727478779748
+  Runtime: 2 minute(s) and 16.40 second(s)
+
+Episode 94:
+  Average meanTravelTime : 327.96292704675386
+  Average waitingTime: 90.25533293230299
+  Runtime: 2 minute(s) and 17.44 second(s)
+
+Episode 95:
+  Average meanTravelTime : 326.2320799197459
+  Average waitingTime: 89.70840369179524
+  Runtime: 2 minute(s) and 19.75 second(s)
+
+Episode 96:
+  Average meanTravelTime : 326.0725101711009
+  Average waitingTime: 88.96558105107327
+  Runtime: 2 minute(s) and 15.93 second(s)
+
+Episode 97:
+  Average meanTravelTime : 329.29204870980897
+  Average waitingTime: 89.94957458614631
+  Runtime: 2 minute(s) and 16.95 second(s)
+
+Episode 98:
+  Average meanTravelTime : 326.97566794850457
+  Average waitingTime: 88.98384446244647
+  Runtime: 2 minute(s) and 17.74 second(s)
+
+Episode 99:
+  Average meanTravelTime : 327.3485398205421
+  Average waitingTime: 88.65097177232762
+  Runtime: 2 minute(s) and 19.08 second(s)
+
+Episode 100:
+  Average meanTravelTime : 324.9226054728898
+  Average waitingTime: 86.8499074502545
+  Runtime: 2 minute(s) and 19.12 second(s)
+
+Episode 101:
+  Average meanTravelTime : 326.44985342473683
+  Average waitingTime: 89.37740345681297
+  Runtime: 2 minute(s) and 24.42 second(s)
+
+Episode 102:
+  Average meanTravelTime : 325.79319901910895
+  Average waitingTime: 88.7522328659355
+  Runtime: 2 minute(s) and 17.01 second(s)
+
+Episode 103:
+  Average meanTravelTime : 323.745616675032
+  Average waitingTime: 86.60988922037976
+  Runtime: 2 minute(s) and 19.27 second(s)
+
+Episode 104:
+  Average meanTravelTime : 326.23181965111365
+  Average waitingTime: 88.05497630331753
+  Runtime: 2 minute(s) and 18.26 second(s)
+
+Episode 105:
+  Average meanTravelTime : 324.8076247004354
+  Average waitingTime: 86.82146738502092
+  Runtime: 2 minute(s) and 18.08 second(s)
+
+Episode 106:
+  Average meanTravelTime : 324.1454946218546
+  Average waitingTime: 86.86618887989827
+  Runtime: 2 minute(s) and 19.35 second(s)
+
+Episode 107:
+  Average meanTravelTime : 323.31838265619075
+  Average waitingTime: 85.98773715872281
+  Runtime: 2 minute(s) and 18.88 second(s)
+
+Episode 108:
+  Average meanTravelTime : 323.87174051161406
+  Average waitingTime: 86.02625552291286
+  Runtime: 2 minute(s) and 16.41 second(s)
+
+Episode 109:
+  Average meanTravelTime : 323.5567998662405
+  Average waitingTime: 85.190440955442
+  Runtime: 2 minute(s) and 23.91 second(s)
+
+Episode 110:
+  Average meanTravelTime : 324.8199860669989
+  Average waitingTime: 86.28719691191087
+  Runtime: 2 minute(s) and 21.33 second(s)
+
+Episode 111:
+  Average meanTravelTime : 323.08326255364614
+  Average waitingTime: 85.18708498183753
+  Runtime: 2 minute(s) and 19.88 second(s)
+
+Episode 112:
+  Average meanTravelTime : 323.06428913781804
+  Average waitingTime: 85.40747252747252
+  Runtime: 2 minute(s) and 20.37 second(s)
+
+Episode 113:
+  Average meanTravelTime : 321.03906202976134
+  Average waitingTime: 84.62981036077706
+  Runtime: 2 minute(s) and 22.31 second(s)
+
+Episode 114:
+  Average meanTravelTime : 322.90574987460593
+  Average waitingTime: 84.80983652045228
+  Runtime: 2 minute(s) and 21.25 second(s)
+
+Episode 115:
+  Average meanTravelTime : 323.75127124783825
+  Average waitingTime: 85.83994632487334
+  Runtime: 2 minute(s) and 21.98 second(s)
+
+Episode 116:
+  Average meanTravelTime : 321.983837708297
+  Average waitingTime: 83.50032383419689
+  Runtime: 2 minute(s) and 22.50 second(s)
+
+Episode 117:
+  Average meanTravelTime : 321.496612606586
+  Average waitingTime: 84.83023320377568
+  Runtime: 2 minute(s) and 20.54 second(s)
+
+Episode 118:
+  Average meanTravelTime : 322.18452488435497
+  Average waitingTime: 84.74089312130178
+  Runtime: 2 minute(s) and 22.25 second(s)
+
+Episode 119:
+  Average meanTravelTime : 322.2612116145596
+  Average waitingTime: 84.26637382961508
+  Runtime: 2 minute(s) and 22.94 second(s)
+
+Episode 120:
+  Average meanTravelTime : 320.81129688457816
+  Average waitingTime: 83.24452309898906
+  Runtime: 2 minute(s) and 22.75 second(s)
+
+Episode 121:
+  Average meanTravelTime : 322.38171041631745
+  Average waitingTime: 84.61571365811926
+  Runtime: 2 minute(s) and 21.66 second(s)
+
+Episode 122:
+  Average meanTravelTime : 319.67732040350074
+  Average waitingTime: 82.16015354021181
+  Runtime: 2 minute(s) and 22.44 second(s)
+
+Episode 123:
+  Average meanTravelTime : 318.2409881290711
+  Average waitingTime: 81.58658028690421
+  Runtime: 2 minute(s) and 21.05 second(s)
+
+Episode 124:
+  Average meanTravelTime : 320.982766538475
+  Average waitingTime: 82.80743157261516
+  Runtime: 2 minute(s) and 22.08 second(s)
+
+Episode 125:
+  Average meanTravelTime : 321.0354121384358
+  Average waitingTime: 82.71750040472722
+  Runtime: 2 minute(s) and 21.64 second(s)
+
+Episode 126:
+  Average meanTravelTime : 320.23770161065414
+  Average waitingTime: 83.29247247154622
+  Runtime: 2 minute(s) and 22.63 second(s)
+
+Episode 127:
+  Average meanTravelTime : 317.73120214011595
+  Average waitingTime: 79.80305622341409
+  Runtime: 2 minute(s) and 22.38 second(s)
+
+Episode 128:
+  Average meanTravelTime : 320.00595385387004
+  Average waitingTime: 82.29005710058487
+  Runtime: 2 minute(s) and 21.32 second(s)
+
+Episode 129:
+  Average meanTravelTime : 321.9396148915964
+  Average waitingTime: 82.69322386679
+  Runtime: 2 minute(s) and 23.00 second(s)
+
+Episode 130:
+  Average meanTravelTime : 319.508711475227
+  Average waitingTime: 81.87679818678015
+  Runtime: 2 minute(s) and 23.54 second(s)
+
+Episode 131:
+  Average meanTravelTime : 316.06038678036003
+  Average waitingTime: 79.95736120424539
+  Runtime: 2 minute(s) and 21.78 second(s)
+
+Episode 132:
+  Average meanTravelTime : 318.9088363149963
+  Average waitingTime: 81.42541525933466
+  Runtime: 2 minute(s) and 22.86 second(s)
+
+Episode 133:
+  Average meanTravelTime : 318.47750933511213
+  Average waitingTime: 81.4145129224652
+  Runtime: 2 minute(s) and 25.21 second(s)
+
+Episode 134:
+  Average meanTravelTime : 318.6754260714471
+  Average waitingTime: 81.68954429794124
+  Runtime: 2 minute(s) and 22.25 second(s)
+
+Episode 135:
+  Average meanTravelTime : 317.5983664939003
+  Average waitingTime: 81.12472829857097
+  Runtime: 2 minute(s) and 23.62 second(s)
+
+Episode 136:
+  Average meanTravelTime : 319.7765395976146
+  Average waitingTime: 82.02521727071006
+  Runtime: 2 minute(s) and 22.94 second(s)
+
+Episode 137:
+  Average meanTravelTime : 320.2076074235121
+  Average waitingTime: 82.57997639926884
+  Runtime: 2 minute(s) and 22.31 second(s)
+
+Episode 138:
+  Average meanTravelTime : 318.84598116257416
+  Average waitingTime: 80.86836022375294
+  Runtime: 2 minute(s) and 23.92 second(s)
+
+Episode 139:
+  Average meanTravelTime : 319.5581363205689
+  Average waitingTime: 80.98307318765175
+  Runtime: 2 minute(s) and 23.24 second(s)
+
+Episode 140:
+  Average meanTravelTime : 319.93413698935666
+  Average waitingTime: 80.92776236708275
+  Runtime: 2 minute(s) and 24.38 second(s)
+
+Episode 141:
+  Average meanTravelTime : 317.8542902524628
+  Average waitingTime: 81.41148181544935
+  Runtime: 2 minute(s) and 23.58 second(s)
+
+Episode 142:
+  Average meanTravelTime : 318.8067313158249
+  Average waitingTime: 80.23042412469358
+  Runtime: 2 minute(s) and 26.03 second(s)
+
+Episode 143:
+  Average meanTravelTime : 316.8246658864207
+  Average waitingTime: 79.67587626005734
+  Runtime: 2 minute(s) and 24.63 second(s)
+
+Episode 144:
+  Average meanTravelTime : 316.2383202363059
+  Average waitingTime: 78.74053192226818
+  Runtime: 2 minute(s) and 25.95 second(s)
+
+Episode 145:
+  Average meanTravelTime : 318.2722448865798
+  Average waitingTime: 80.0649239587667
+  Runtime: 2 minute(s) and 24.19 second(s)
+
+Episode 146:
+  Average meanTravelTime : 317.5630970294789
+  Average waitingTime: 79.79648676759506
+  Runtime: 2 minute(s) and 24.76 second(s)
+
+Episode 147:
+  Average meanTravelTime : 317.4944440728923
+  Average waitingTime: 79.67358028116907
+  Runtime: 2 minute(s) and 24.55 second(s)
+
+Episode 148:
+  Average meanTravelTime : 316.8468511397188
+  Average waitingTime: 79.35351481258955
+  Runtime: 2 minute(s) and 25.32 second(s)
+
+Episode 149:
+  Average meanTravelTime : 319.3967223987156
+  Average waitingTime: 79.67243930635838
+  Runtime: 2 minute(s) and 27.20 second(s)
+
+Episode 150:
+  Average meanTravelTime : 317.0826166192917
+  Average waitingTime: 78.90896060662105
+  Runtime: 2 minute(s) and 26.48 second(s)
+
+Episode 151:
+  Average meanTravelTime : 316.3759109401937
+  Average waitingTime: 78.91757606584666
+  Runtime: 2 minute(s) and 25.75 second(s)
+
+Episode 152:
+  Average meanTravelTime : 316.21870590202093
+  Average waitingTime: 78.36811560693641
+  Runtime: 2 minute(s) and 26.46 second(s)
+
+Episode 153:
+  Average meanTravelTime : 314.1039993312148
+  Average waitingTime: 77.41549165549444
+  Runtime: 2 minute(s) and 27.45 second(s)
+
+Episode 154:
+  Average meanTravelTime : 317.42626428133326
+  Average waitingTime: 78.83657956147039
+  Runtime: 2 minute(s) and 27.34 second(s)
+
+Episode 155:
+  Average meanTravelTime : 314.6298205428276
+  Average waitingTime: 77.5050395302603
+  Runtime: 2 minute(s) and 25.79 second(s)
+
+Episode 156:
+  Average meanTravelTime : 315.6027570640357
+  Average waitingTime: 76.88600952424984
+  Runtime: 2 minute(s) and 26.84 second(s)
+
+Episode 157:
+  Average meanTravelTime : 314.3903382934913
+  Average waitingTime: 76.16908670520232
+  Runtime: 2 minute(s) and 26.60 second(s)
+
+Episode 158:
+  Average meanTravelTime : 315.21411135261303
+  Average waitingTime: 77.27345484826054
+  Runtime: 2 minute(s) and 27.18 second(s)
+
+Episode 159:
+  Average meanTravelTime : 313.37001170373156
+  Average waitingTime: 76.77123246516142
+  Runtime: 2 minute(s) and 27.17 second(s)
+
+Episode 160:
+  Average meanTravelTime : 315.564905534193
+  Average waitingTime: 77.68306781659692
+  Runtime: 2 minute(s) and 28.17 second(s)
+
+Episode 161:
+  Average meanTravelTime : 315.6588140221752
+  Average waitingTime: 77.18818906737548
+  Runtime: 2 minute(s) and 27.59 second(s)
+
+Episode 162:
+  Average meanTravelTime : 313.0860162737585
+  Average waitingTime: 76.49433604586648
+  Runtime: 2 minute(s) and 26.74 second(s)
+
+Episode 163:
+  Average meanTravelTime : 316.4278866410312
+  Average waitingTime: 78.24009803694884
+  Runtime: 2 minute(s) and 28.73 second(s)
+
+Episode 164:
+  Average meanTravelTime : 315.384178231065
+  Average waitingTime: 78.6323464836257
+  Runtime: 2 minute(s) and 28.09 second(s)
+
+Episode 165:
+  Average meanTravelTime : 312.6227654238494
+  Average waitingTime: 75.99137632071763
+  Runtime: 2 minute(s) and 26.82 second(s)
+
+Episode 166:
+  Average meanTravelTime : 315.32637017221464
+  Average waitingTime: 76.93395288623806
+  Runtime: 2 minute(s) and 28.49 second(s)
+
+Episode 167:
+  Average meanTravelTime : 313.6347009975958
+  Average waitingTime: 76.31288442861768
+  Runtime: 2 minute(s) and 28.05 second(s)
+
+Episode 168:
+  Average meanTravelTime : 311.6911804046171
+  Average waitingTime: 75.41817887607203
+  Runtime: 2 minute(s) and 28.61 second(s)
+
+Episode 169:
+  Average meanTravelTime : 312.8572228724283
+  Average waitingTime: 75.09646242774566
+  Runtime: 2 minute(s) and 28.84 second(s)
+
+Episode 170:
+  Average meanTravelTime : 314.43652120604554
+  Average waitingTime: 78.00497040872942
+  Runtime: 2 minute(s) and 29.30 second(s)
+
+Episode 171:
+  Average meanTravelTime : 311.7476921362066
+  Average waitingTime: 74.94951362092469
+  Runtime: 2 minute(s) and 29.46 second(s)
+
+Episode 172:
+  Average meanTravelTime : 312.7652131750523
+  Average waitingTime: 75.82409098264026
+  Runtime: 2 minute(s) and 30.31 second(s)
+
+Episode 173:
+  Average meanTravelTime : 312.5160814802331
+  Average waitingTime: 75.53189521629558
+  Runtime: 2 minute(s) and 30.03 second(s)
+
+Episode 174:
+  Average meanTravelTime : 315.06120492670914
+  Average waitingTime: 77.15579793871609
+  Runtime: 2 minute(s) and 27.79 second(s)
+
+Episode 175:
+  Average meanTravelTime : 311.99914507050266
+  Average waitingTime: 75.26323577010218
+  Runtime: 2 minute(s) and 29.47 second(s)
+
+Episode 176:
+  Average meanTravelTime : 313.5974162626148
+  Average waitingTime: 75.04221086941446
+  Runtime: 2 minute(s) and 29.77 second(s)
+
+Episode 177:
+  Average meanTravelTime : 312.2941748871404
+  Average waitingTime: 76.17964251855621
+  Runtime: 2 minute(s) and 28.95 second(s)
+
+Episode 178:
+  Average meanTravelTime : 311.463015660704
+  Average waitingTime: 75.04998266897746
+  Runtime: 2 minute(s) and 29.97 second(s)
+
+Episode 179:
+  Average meanTravelTime : 313.0096031878747
+  Average waitingTime: 75.95336092676949
+  Runtime: 2 minute(s) and 29.30 second(s)
+
+Episode 180:
+  Average meanTravelTime : 312.2036772000268
+  Average waitingTime: 75.59490687248694
+  Runtime: 2 minute(s) and 29.85 second(s)
+
+Episode 181:
+  Average meanTravelTime : 315.75363985955613
+  Average waitingTime: 76.03470986527395
+  Runtime: 2 minute(s) and 31.50 second(s)
+
+Episode 182:
+  Average meanTravelTime : 314.4478487432463
+  Average waitingTime: 76.77269365871695
+  Runtime: 2 minute(s) and 30.95 second(s)
+
+Episode 183:
+  Average meanTravelTime : 309.9421033272013
+  Average waitingTime: 73.97191296715481
+  Runtime: 2 minute(s) and 29.19 second(s)
+
+Episode 184:
+  Average meanTravelTime : 312.8058390458655
+  Average waitingTime: 75.28421539172636
+  Runtime: 2 minute(s) and 29.56 second(s)
+
+Episode 185:
+  Average meanTravelTime : 312.46797915622057
+  Average waitingTime: 74.38451228248562
+  Runtime: 2 minute(s) and 30.00 second(s)
+
+Episode 186:
+  Average meanTravelTime : 311.7104909992737
+  Average waitingTime: 74.98633747139192
+  Runtime: 2 minute(s) and 32.00 second(s)
+
+Episode 187:
+  Average meanTravelTime : 313.05245388174103
+  Average waitingTime: 76.10161465431614
+  Runtime: 2 minute(s) and 35.44 second(s)
+
+Episode 188:
+  Average meanTravelTime : 313.40073231900993
+  Average waitingTime: 74.55896558896258
+  Runtime: 2 minute(s) and 36.73 second(s)
+
+Episode 189:
+  Average meanTravelTime : 312.34482205513655
+  Average waitingTime: 73.86392938838698
+  Runtime: 5 minute(s) and 0.88 second(s)
+
+Episode 190:
+  Average meanTravelTime : 310.2782149027433
+  Average waitingTime: 73.62439914956553
+  Runtime: 2 minute(s) and 58.90 second(s)
+
+Episode 191:
+  Average meanTravelTime : 312.6008744357103
+  Average waitingTime: 74.9991909198086
+  Runtime: 2 minute(s) and 49.76 second(s)
+
+Episode 192:
+  Average meanTravelTime : 311.986356796524
+  Average waitingTime: 74.0933129926265
+  Runtime: 2 minute(s) and 36.69 second(s)
+
+Episode 193:
+  Average meanTravelTime : 313.15555592709615
+  Average waitingTime: 74.43108111231825
+  Runtime: 2 minute(s) and 29.42 second(s)
+
+Episode 194:
+  Average meanTravelTime : 312.6407925096078
+  Average waitingTime: 74.81558759646934
+  Runtime: 2 minute(s) and 31.02 second(s)
+
+Episode 195:
+  Average meanTravelTime : 313.5782817811932
+  Average waitingTime: 74.84439359267735
+  Runtime: 2 minute(s) and 31.46 second(s)
+
+Episode 196:
+  Average meanTravelTime : 313.16163907930036
+  Average waitingTime: 74.07062466779136
+  Runtime: 2 minute(s) and 29.75 second(s)
+
+Episode 197:
+  Average meanTravelTime : 311.5880164966818
+  Average waitingTime: 74.5971670209816
+  Runtime: 2 minute(s) and 31.02 second(s)
+
+Episode 198:
+  Average meanTravelTime : 312.5163116535674
+  Average waitingTime: 74.68571626649413
+  Runtime: 2 minute(s) and 31.88 second(s)
+
+Episode 199:
+  Average meanTravelTime : 311.2595758791688
+  Average waitingTime: 72.87691809946385
+  Runtime: 2 minute(s) and 30.25 second(s)
+
+Episode 200:
+  Average meanTravelTime : 310.15978097308374
+  Average waitingTime: 72.73774203983548
+  Runtime: 2 minute(s) and 30.33 second(s)
+
+Episode 201:
+  Average meanTravelTime : 310.99133589700347
+  Average waitingTime: 73.94562806174324
+  Runtime: 2 minute(s) and 31.85 second(s)
+
+Episode 202:
+  Average meanTravelTime : 310.2357175500094
+  Average waitingTime: 73.16003698139373
+  Runtime: 2 minute(s) and 31.03 second(s)
+
+Episode 203:
+  Average meanTravelTime : 310.28199910828727
+  Average waitingTime: 73.70241150493631
+  Runtime: 2 minute(s) and 31.38 second(s)
+
+Episode 204:
+  Average meanTravelTime : 309.9582778799491
+  Average waitingTime: 74.24171864171865
+  Runtime: 2 minute(s) and 31.68 second(s)
+
+Episode 205:
+  Average meanTravelTime : 312.04299002395675
+  Average waitingTime: 73.13939295869068
+  Runtime: 2 minute(s) and 31.90 second(s)
+
+Episode 206:
+  Average meanTravelTime : 309.6350147689865
+  Average waitingTime: 72.21253349348609
+  Runtime: 2 minute(s) and 30.89 second(s)
+
+Episode 207:
+  Average meanTravelTime : 311.8855258317975
+  Average waitingTime: 74.8103217158177
+  Runtime: 2 minute(s) and 32.18 second(s)
+
+Episode 208:
+  Average meanTravelTime : 314.0081953965355
+  Average waitingTime: 74.34757788665989
+  Runtime: 2 minute(s) and 32.13 second(s)
+
+Episode 209:
+  Average meanTravelTime : 308.0855475673029
+  Average waitingTime: 71.88621231736637
+  Runtime: 2 minute(s) and 32.42 second(s)
+
+Episode 210:
+  Average meanTravelTime : 312.346867859332
+  Average waitingTime: 72.94605895398263
+  Runtime: 2 minute(s) and 34.66 second(s)
+
+Episode 211:
+  Average meanTravelTime : 311.66071002619657
+  Average waitingTime: 74.28468401830706
+  Runtime: 2 minute(s) and 33.74 second(s)
+
+Episode 212:
+  Average meanTravelTime : 312.19079696818085
+  Average waitingTime: 75.1738246035782
+  Runtime: 2 minute(s) and 32.55 second(s)
+
+Episode 213:
+  Average meanTravelTime : 308.99195619461426
+  Average waitingTime: 73.26718316373729
+  Runtime: 2 minute(s) and 32.94 second(s)
+
+Episode 214:
+  Average meanTravelTime : 312.32406955358204
+  Average waitingTime: 74.91883709643872
+  Runtime: 2 minute(s) and 31.83 second(s)
+
+Episode 215:
+  Average meanTravelTime : 310.0688218246737
+  Average waitingTime: 74.117591308368
+  Runtime: 2 minute(s) and 32.42 second(s)
+
+Episode 216:
+  Average meanTravelTime : 312.67459343476855
+  Average waitingTime: 74.79723044201961
+  Runtime: 2 minute(s) and 34.56 second(s)
+
+Episode 217:
+  Average meanTravelTime : 309.6106403611455
+  Average waitingTime: 73.00062378708067
+  Runtime: 2 minute(s) and 33.88 second(s)
+
+Episode 218:
+  Average meanTravelTime : 310.37219528506955
+  Average waitingTime: 75.9843262362161
+  Runtime: 2 minute(s) and 33.11 second(s)
+
+Episode 219:
+  Average meanTravelTime : 311.8072786044675
+  Average waitingTime: 74.5643555206432
+  Runtime: 2 minute(s) and 35.32 second(s)
+
+Episode 220:
+  Average meanTravelTime : 310.20369169034836
+  Average waitingTime: 72.49492638050991
+  Runtime: 2 minute(s) and 35.72 second(s)
+
+Episode 221:
+  Average meanTravelTime : 309.94827007746824
+  Average waitingTime: 72.34360052683874
+  Runtime: 2 minute(s) and 33.14 second(s)
+
+Episode 222:
+  Average meanTravelTime : 310.7497926768129
+  Average waitingTime: 72.9905041356684
+  Runtime: 2 minute(s) and 33.16 second(s)
+
+Episode 223:
+  Average meanTravelTime : 311.3894398929964
+  Average waitingTime: 73.35488718328094
+  Runtime: 2 minute(s) and 32.10 second(s)
+
+Episode 224:
+  Average meanTravelTime : 310.0060430251283
+  Average waitingTime: 72.66387797550266
+  Runtime: 2 minute(s) and 34.02 second(s)
+
+Episode 225:
+  Average meanTravelTime : 308.94261940589297
+  Average waitingTime: 71.11615169513068
+  Runtime: 2 minute(s) and 33.06 second(s)
+
+Episode 226:
+  Average meanTravelTime : 312.2123875606113
+  Average waitingTime: 74.57419474097694
+  Runtime: 2 minute(s) and 34.54 second(s)
+
+Episode 227:
+  Average meanTravelTime : 311.94129409798035
+  Average waitingTime: 73.20213134838993
+  Runtime: 2 minute(s) and 33.33 second(s)
+
+Episode 228:
+  Average meanTravelTime : 309.4735941592824
+  Average waitingTime: 72.05233001409329
+  Runtime: 2 minute(s) and 34.87 second(s)
+
+Episode 229:
+  Average meanTravelTime : 311.8638237752884
+  Average waitingTime: 73.0133324090762
+  Runtime: 2 minute(s) and 33.91 second(s)
+
+Episode 230:
+  Average meanTravelTime : 310.87220030095403
+  Average waitingTime: 73.30190205458874
+  Runtime: 2 minute(s) and 34.32 second(s)
+
+Episode 231:
+  Average meanTravelTime : 311.71722788831283
+  Average waitingTime: 73.84603471788826
+  Runtime: 2 minute(s) and 36.82 second(s)
+
+Episode 232:
+  Average meanTravelTime : 310.21442178008414
+  Average waitingTime: 72.57086723372781
+  Runtime: 2 minute(s) and 36.22 second(s)
+
+Episode 233:
+  Average meanTravelTime : 310.85807445800157
+  Average waitingTime: 73.24635639219309
+  Runtime: 2 minute(s) and 35.26 second(s)
+
+Episode 234:
+  Average meanTravelTime : 311.4217488714238
+  Average waitingTime: 73.11582038475768
+  Runtime: 2 minute(s) and 38.19 second(s)
+
+Episode 235:
+  Average meanTravelTime : 309.4669358524221
+  Average waitingTime: 73.06764345635645
+  Runtime: 2 minute(s) and 36.29 second(s)
+
+Episode 236:
+  Average meanTravelTime : 308.49012929833617
+  Average waitingTime: 72.25214840140454
+  Runtime: 2 minute(s) and 35.81 second(s)
+
+Episode 237:
+  Average meanTravelTime : 310.62489773171035
+  Average waitingTime: 73.86665434124471
+  Runtime: 2 minute(s) and 37.78 second(s)
+
+Episode 238:
+  Average meanTravelTime : 313.0622805550937
+  Average waitingTime: 75.27342720399528
+  Runtime: 2 minute(s) and 36.11 second(s)
+
+Episode 239:
+  Average meanTravelTime : 310.5487878281313
+  Average waitingTime: 72.99288157529814
+  Runtime: 2 minute(s) and 36.46 second(s)
+
+Episode 240:
+  Average meanTravelTime : 309.6580766872834
+  Average waitingTime: 72.75275030045299
+  Runtime: 2 minute(s) and 41.02 second(s)
+
+Episode 241:
+  Average meanTravelTime : 309.4795942707443
+  Average waitingTime: 72.75375548879131
+  Runtime: 2 minute(s) and 37.87 second(s)
+
+Episode 242:
+  Average meanTravelTime : 308.6699899682297
+  Average waitingTime: 71.31261561228266
+  Runtime: 2 minute(s) and 35.01 second(s)
+
+Episode 243:
+  Average meanTravelTime : 309.61463913504446
+  Average waitingTime: 71.19831272391079
+  Runtime: 2 minute(s) and 34.17 second(s)
+
+Episode 244:
+  Average meanTravelTime : 309.2292866298819
+  Average waitingTime: 70.8095469143504
+  Runtime: 2 minute(s) and 33.73 second(s)
+
+Episode 245:
+  Average meanTravelTime : 308.1778047149287
+  Average waitingTime: 70.71510754799806
+  Runtime: 2 minute(s) and 35.67 second(s)
+
+Episode 246:
+  Average meanTravelTime : 306.83770105333457
+  Average waitingTime: 69.9614353713203
+  Runtime: 2 minute(s) and 35.46 second(s)
+
+Episode 247:
+  Average meanTravelTime : 306.73628991807897
+  Average waitingTime: 71.00649290632654
+  Runtime: 2 minute(s) and 35.76 second(s)
+
+Episode 248:
+  Average meanTravelTime : 309.8256857827533
+  Average waitingTime: 72.47302885392843
+  Runtime: 2 minute(s) and 50.92 second(s)
+
+Episode 249:
+  Average meanTravelTime : 308.17756339519605
+  Average waitingTime: 71.04452300085488
+  Runtime: 2 minute(s) and 40.13 second(s)
+
+Episode 250:
+  Average meanTravelTime : 307.42030931282767
+  Average waitingTime: 69.51320074838888
+  Runtime: 2 minute(s) and 46.92 second(s)
+
+Episode 251:
+  Average meanTravelTime : 305.4826890709461
+  Average waitingTime: 68.41213703250249
+  Runtime: 74 minute(s) and 26.55 second(s)
+
+Episode 252:
+  Average meanTravelTime : 308.0701504765031
+  Average waitingTime: 71.65331207689286
+  Runtime: 51 minute(s) and 18.93 second(s)
+
+Episode 253:
+  Average meanTravelTime : 309.20462464470165
+  Average waitingTime: 71.5478638600707
+  Runtime: 2 minute(s) and 39.41 second(s)
+
+Episode 254:
+  Average meanTravelTime : 306.99364933400636
+  Average waitingTime: 70.0345170159185
+  Runtime: 2 minute(s) and 50.16 second(s)
+
+Episode 255:
+  Average meanTravelTime : 309.44318062753933
+  Average waitingTime: 72.02630423225389
+  Runtime: 2 minute(s) and 42.13 second(s)
+
+Episode 256:
+  Average meanTravelTime : 308.08244162068553
+  Average waitingTime: 70.29020033736165
+  Runtime: 2 minute(s) and 41.67 second(s)
+
+Episode 257:
+  Average meanTravelTime : 307.56317338237784
+  Average waitingTime: 70.0456614673599
+  Runtime: 2 minute(s) and 38.56 second(s)
+
+Episode 258:
+  Average meanTravelTime : 307.30845343586964
+  Average waitingTime: 70.11269199676637
+  Runtime: 2 minute(s) and 39.21 second(s)
+
+Episode 259:
+  Average meanTravelTime : 309.3954511508644
+  Average waitingTime: 70.84555511929233
+  Runtime: 2 minute(s) and 40.75 second(s)
+
+Episode 260:
+  Average meanTravelTime : 310.44020286463194
+  Average waitingTime: 72.2550124734362
+  Runtime: 2 minute(s) and 37.37 second(s)
+
+Episode 261:
+  Average meanTravelTime : 307.75239146185487
+  Average waitingTime: 70.46256696840939
+  Runtime: 2 minute(s) and 39.99 second(s)
+
+Episode 262:
+  Average meanTravelTime : 309.0094967396721
+  Average waitingTime: 71.94222591976336
+  Runtime: 2 minute(s) and 44.62 second(s)
+
+Episode 263:
+  Average meanTravelTime : 308.09896282672446
+  Average waitingTime: 71.64741339491917
+  Runtime: 2 minute(s) and 39.55 second(s)
+
+Episode 264:
+  Average meanTravelTime : 307.0962626093755
+  Average waitingTime: 69.16984269974361
+  Runtime: 2 minute(s) and 40.05 second(s)
+
+Episode 265:
+  Average meanTravelTime : 308.3939853982076
+  Average waitingTime: 70.44058205335489
+  Runtime: 2 minute(s) and 47.14 second(s)
+
+Episode 266:
+  Average meanTravelTime : 307.114776235858
+  Average waitingTime: 70.12047218628719
+  Runtime: 2 minute(s) and 48.54 second(s)
+
+Episode 267:
+  Average meanTravelTime : 308.72582065429344
+  Average waitingTime: 71.15747158303299
+  Runtime: 2 minute(s) and 40.21 second(s)
+
+Episode 268:
+  Average meanTravelTime : 307.2258496349558
+  Average waitingTime: 70.49647586254709
+  Runtime: 2 minute(s) and 42.92 second(s)
+
+Episode 269:
+  Average meanTravelTime : 311.6526060302083
+  Average waitingTime: 72.54769223657753
+  Runtime: 2 minute(s) and 42.65 second(s)
+
+Episode 270:
+  Average meanTravelTime : 309.55048598339334
+  Average waitingTime: 72.80949851008293
+  Runtime: 2 minute(s) and 44.80 second(s)
+
+Episode 271:
+  Average meanTravelTime : 308.31240873878096
+  Average waitingTime: 71.26064751692742
+  Runtime: 2 minute(s) and 41.63 second(s)
+
+Episode 272:
+  Average meanTravelTime : 307.2240389009639
+  Average waitingTime: 70.84416304649228
+  Runtime: 2 minute(s) and 46.48 second(s)
+
+Episode 273:
+  Average meanTravelTime : 307.3782293930746
+  Average waitingTime: 71.31568486977422
+  Runtime: 2 minute(s) and 41.95 second(s)
+
+Episode 274:
+  Average meanTravelTime : 308.4011168700835
+  Average waitingTime: 70.46990596335574
+  Runtime: 2 minute(s) and 46.07 second(s)
+
+Episode 275:
+  Average meanTravelTime : 308.78876832190946
+  Average waitingTime: 71.65225333549148
+  Runtime: 2 minute(s) and 50.97 second(s)
+
+Episode 276:
+  Average meanTravelTime : 309.7884144234469
+  Average waitingTime: 71.14531791907514
+  Runtime: 2 minute(s) and 41.80 second(s)
+
+Episode 277:
+  Average meanTravelTime : 308.6453424733859
+  Average waitingTime: 70.95848446343999
+  Runtime: 2 minute(s) and 44.83 second(s)
+
+Episode 278:
+  Average meanTravelTime : 308.88531795129165
+  Average waitingTime: 71.1964615668884
+  Runtime: 2 minute(s) and 48.24 second(s)
+
+Episode 279:
+  Average meanTravelTime : 306.94642980549696
+  Average waitingTime: 70.1368970615413
+  Runtime: 2 minute(s) and 43.26 second(s)
+
+Episode 280:
+  Average meanTravelTime : 306.8671208827964
+  Average waitingTime: 70.2412725550447
+  Runtime: 2 minute(s) and 43.21 second(s)
+
+Episode 281:
+  Average meanTravelTime : 308.81286016830984
+  Average waitingTime: 71.14687124503189
+  Runtime: 2 minute(s) and 38.61 second(s)
+
+Episode 282:
+  Average meanTravelTime : 310.5084289137816
+  Average waitingTime: 71.9022012796526
+  Runtime: 2 minute(s) and 40.79 second(s)
+
+Episode 283:
+  Average meanTravelTime : 306.4446948670837
+  Average waitingTime: 69.83021483021483
+  Runtime: 2 minute(s) and 38.00 second(s)
+
+Episode 284:
+  Average meanTravelTime : 309.7090865518617
+  Average waitingTime: 71.99725008087998
+  Runtime: 2 minute(s) and 48.70 second(s)
+
+Episode 285:
+  Average meanTravelTime : 309.02533690018896
+  Average waitingTime: 72.66508736248498
+  Runtime: 2 minute(s) and 53.56 second(s)
+
+Episode 286:
+  Average meanTravelTime : 309.4986663322744
+  Average waitingTime: 71.69878181271815
+  Runtime: 2 minute(s) and 41.07 second(s)
+
+Episode 287:
+  Average meanTravelTime : 310.35066432592
+  Average waitingTime: 73.34450712039948
+  Runtime: 2 minute(s) and 43.98 second(s)
+
+Episode 288:
+  Average meanTravelTime : 309.7906871760566
+  Average waitingTime: 72.16630080643297
+  Runtime: 2 minute(s) and 42.34 second(s)
+
+Episode 289:
+  Average meanTravelTime : 306.2462960485987
+  Average waitingTime: 69.86321310566325
+  Runtime: 2 minute(s) and 45.63 second(s)
+
+Episode 290:
+  Average meanTravelTime : 307.4833812628914
+  Average waitingTime: 70.37339710265475
+  Runtime: 2 minute(s) and 41.35 second(s)
+
+Episode 291:
+  Average meanTravelTime : 308.9647684333733
+  Average waitingTime: 72.53296639763188
+  Runtime: 2 minute(s) and 39.42 second(s)
+
+Episode 292:
+  Average meanTravelTime : 308.804191606755
+  Average waitingTime: 72.5058507932103
+  Runtime: 2 minute(s) and 40.99 second(s)
+
+Episode 293:
+  Average meanTravelTime : 308.38295491278575
+  Average waitingTime: 74.07091098506771
+  Runtime: 2 minute(s) and 51.07 second(s)
+
+Episode 294:
+  Average meanTravelTime : 308.67276096527996
+  Average waitingTime: 71.00367443150306
+  Runtime: 2 minute(s) and 47.67 second(s)
+
+Episode 295:
+  Average meanTravelTime : 306.04386445967253
+  Average waitingTime: 70.9213555874058
+  Runtime: 2 minute(s) and 48.12 second(s)
+
+Episode 296:
+  Average meanTravelTime : 309.9564052833977
+  Average waitingTime: 72.60053166897828
+  Runtime: 2 minute(s) and 43.33 second(s)
+
+Episode 297:
+  Average meanTravelTime : 309.1794872652244
+  Average waitingTime: 71.87153291420118
+  Runtime: 2 minute(s) and 43.05 second(s)
+
+Episode 298:
+  Average meanTravelTime : 307.3871526500617
+  Average waitingTime: 70.84456413694261
+  Runtime: 2 minute(s) and 44.22 second(s)
+
+Episode 299:
+  Average meanTravelTime : 307.05676921362135
+  Average waitingTime: 70.10280654706861
+  Runtime: 2 minute(s) and 45.21 second(s)
+
+Episode 300:
+  Average meanTravelTime : 306.34114975198975
+  Average waitingTime: 69.83607959141226
+  Runtime: 2 minute(s) and 47.25 second(s)
+
+Episode 301:
+  Average meanTravelTime : 306.487711085106
+  Average waitingTime: 68.97559002334667
+  Runtime: 2 minute(s) and 43.86 second(s)
+
+Episode 302:
+  Average meanTravelTime : 306.68029983837914
+  Average waitingTime: 70.23165148221801
+  Runtime: 2 minute(s) and 43.70 second(s)
+
+Episode 303:
+  Average meanTravelTime : 308.27765702502194
+  Average waitingTime: 71.8198616989292
+  Runtime: 2 minute(s) and 45.57 second(s)
+
+Episode 304:
+  Average meanTravelTime : 312.1881981831367
+  Average waitingTime: 73.5467168799963
+  Runtime: 2 minute(s) and 44.46 second(s)
+
+Episode 305:
+  Average meanTravelTime : 306.5365072730317
+  Average waitingTime: 70.93767188186084
+  Runtime: 2 minute(s) and 47.46 second(s)
+
+Episode 306:
+  Average meanTravelTime : 307.66749317282546
+  Average waitingTime: 71.3843398275902
+  Runtime: 2 minute(s) and 44.09 second(s)
+
+Episode 307:
+  Average meanTravelTime : 308.7089784317001
+  Average waitingTime: 71.99301621071619
+  Runtime: 2 minute(s) and 46.37 second(s)
+
+Episode 308:
+  Average meanTravelTime : 311.0116981552725
+  Average waitingTime: 74.84086811815283
+  Runtime: 2 minute(s) and 48.50 second(s)
+
+Episode 309:
+  Average meanTravelTime : 308.19049211391626
+  Average waitingTime: 73.09292597813779
+  Runtime: 2 minute(s) and 44.36 second(s)
+
+Episode 310:
+  Average meanTravelTime : 309.2907406788141
+  Average waitingTime: 72.59759308879238
+  Runtime: 2 minute(s) and 50.27 second(s)
+
+Episode 311:
+  Average meanTravelTime : 307.8202346318889
+  Average waitingTime: 69.82778060163578
+  Runtime: 2 minute(s) and 41.25 second(s)
+
+Episode 312:
+  Average meanTravelTime : 308.20443682773816
+  Average waitingTime: 71.88033733826248
+  Runtime: 2 minute(s) and 43.11 second(s)
+
+Episode 313:
+  Average meanTravelTime : 308.36662263835916
+  Average waitingTime: 70.21046917230706
+  Runtime: 2 minute(s) and 47.46 second(s)
+
+Episode 314:
+  Average meanTravelTime : 306.8600574039977
+  Average waitingTime: 70.46342026842846
+  Runtime: 2 minute(s) and 41.93 second(s)
+
+Episode 315:
+  Average meanTravelTime : 306.4665468427789
+  Average waitingTime: 70.50592967612178
+  Runtime: 2 minute(s) and 47.80 second(s)
+
+Episode 316:
+  Average meanTravelTime : 308.2838800646468
+  Average waitingTime: 71.38798104703571
+  Runtime: 2 minute(s) and 50.03 second(s)
+
+Episode 317:
+  Average meanTravelTime : 307.94840773560395
+  Average waitingTime: 71.70590001848088
+  Runtime: 2 minute(s) and 45.11 second(s)
+
+Episode 318:
+  Average meanTravelTime : 308.62534971855126
+  Average waitingTime: 72.67357369163526
+  Runtime: 2 minute(s) and 41.82 second(s)
+
+Episode 319:
+  Average meanTravelTime : 310.32531739397035
+  Average waitingTime: 73.23877489648153
+  Runtime: 2 minute(s) and 42.78 second(s)
+
+Episode 320:
+  Average meanTravelTime : 308.84324862063164
+  Average waitingTime: 72.28770923887913
+  Runtime: 2 minute(s) and 41.79 second(s)
+
+Episode 321:
+  Average meanTravelTime : 311.4142138995726
+  Average waitingTime: 72.72712138728323
+  Runtime: 2 minute(s) and 44.23 second(s)
+
+Episode 322:
+  Average meanTravelTime : 308.27637797469424
+  Average waitingTime: 73.63816398297243
+  Runtime: 2 minute(s) and 51.07 second(s)
+
+Episode 323:
+  Average meanTravelTime : 307.49703672741487
+  Average waitingTime: 72.59554928404543
+  Runtime: 2 minute(s) and 43.07 second(s)
+
+Episode 324:
+  Average meanTravelTime : 308.3063640416895
+  Average waitingTime: 71.89713598853471
+  Runtime: 2 minute(s) and 45.70 second(s)
+
+Episode 325:
+  Average meanTravelTime : 311.6402123390722
+  Average waitingTime: 73.5145756756132
+  Runtime: 2 minute(s) and 42.28 second(s)
+
+Episode 326:
+  Average meanTravelTime : 310.15014378866385
+  Average waitingTime: 72.86548463903465
+  Runtime: 2 minute(s) and 40.07 second(s)
+
+Episode 327:
+  Average meanTravelTime : 310.98170595774764
+  Average waitingTime: 74.55583832681674
+  Runtime: 2 minute(s) and 40.47 second(s)
+
+Episode 328:
+  Average meanTravelTime : 309.08472217578253
+  Average waitingTime: 71.42369589345172
+  Runtime: 2 minute(s) and 42.43 second(s)
+
+Episode 329:
+  Average meanTravelTime : 307.38428412193934
+  Average waitingTime: 69.79142791127542
+  Runtime: 3 minute(s) and 20.04 second(s)
+
+Episode 330:
+  Average meanTravelTime : 310.294105222087
+  Average waitingTime: 72.72014054228983
+  Runtime: 2 minute(s) and 40.77 second(s)
+
+Episode 331:
+  Average meanTravelTime : 309.6273153876191
+  Average waitingTime: 72.76197739721279
+  Runtime: 2 minute(s) and 41.13 second(s)
+
+Episode 332:
+  Average meanTravelTime : 311.7011887644184
+  Average waitingTime: 72.75859676710681
+  Runtime: 2 minute(s) and 52.03 second(s)
+
+Episode 333:
+  Average meanTravelTime : 309.19345594382037
+  Average waitingTime: 73.06986101796822
+  Runtime: 3 minute(s) and 3.58 second(s)
+
+Episode 334:
+  Average meanTravelTime : 311.17262720838613
+  Average waitingTime: 74.79212846201902
+  Runtime: 2 minute(s) and 54.63 second(s)
+
+Episode 335:
+  Average meanTravelTime : 312.0475399877323
+  Average waitingTime: 75.978663334259
+  Runtime: 2 minute(s) and 56.48 second(s)
+
+Episode 336:
+  Average meanTravelTime : 308.02109847851773
+  Average waitingTime: 72.0986355226642
+  Runtime: 2 minute(s) and 57.02 second(s)
+
+Episode 337:
+  Average meanTravelTime : 309.4507869364058
+  Average waitingTime: 73.04440181213018
+  Runtime: 3 minute(s) and 5.33 second(s)
+
+Episode 338:
+  Average meanTravelTime : 307.1997525497435
+  Average waitingTime: 69.9393813385081
+  Runtime: 3 minute(s) and 3.86 second(s)
+
+Episode 339:
+  Average meanTravelTime : 306.63806052499626
+  Average waitingTime: 69.61585732107379
+  Runtime: 3 minute(s) and 18.48 second(s)
+
+Episode 340:
+  Average meanTravelTime : 306.5452087164882
+  Average waitingTime: 70.92370295015259
+  Runtime: 3 minute(s) and 10.30 second(s)
+
+Episode 341:
+  Average meanTravelTime : 308.5827676531278
+  Average waitingTime: 73.35838150289017
+  Runtime: 2 minute(s) and 45.99 second(s)
+
+Episode 342:
+  Average meanTravelTime : 307.6473925150393
+  Average waitingTime: 75.80928693775077
+  Runtime: 2 minute(s) and 43.57 second(s)
+
+Episode 343:
+  Average meanTravelTime : 305.5620303182328
+  Average waitingTime: 70.1201210916738
+  Runtime: 2 minute(s) and 44.86 second(s)
+
+Episode 344:
+  Average meanTravelTime : 308.70936688402514
+  Average waitingTime: 72.64153561517114
+  Runtime: 2 minute(s) and 45.46 second(s)
+
+Episode 345:
+  Average meanTravelTime : 307.160062977198
+  Average waitingTime: 71.87287939721722
+  Runtime: 2 minute(s) and 50.30 second(s)
+
+Episode 346:
+  Average meanTravelTime : 308.03496182355747
+  Average waitingTime: 72.83457098572651
+  Runtime: 2 minute(s) and 45.52 second(s)
+
+Episode 347:
+  Average meanTravelTime : 310.6744986902998
+  Average waitingTime: 73.9097657424323
+  Runtime: 2 minute(s) and 50.76 second(s)
+
+Episode 348:
+  Average meanTravelTime : 306.9007468093393
+  Average waitingTime: 72.31435580550348
+  Runtime: 2 minute(s) and 42.74 second(s)
+
+Episode 349:
+  Average meanTravelTime : 306.8991679206402
+  Average waitingTime: 71.4177519720558
+  Runtime: 2 minute(s) and 43.77 second(s)
+
+Episode 350:
+  Average meanTravelTime : 307.82486912452634
+  Average waitingTime: 74.33363572923936
+  Runtime: 2 minute(s) and 47.03 second(s)
+
+Episode 351:
+  Average meanTravelTime : 307.189049211389
+  Average waitingTime: 70.5797550265773
+  Runtime: 2 minute(s) and 45.04 second(s)
+
+Episode 352:
+  Average meanTravelTime : 308.39243716212087
+  Average waitingTime: 71.23858724545224
+  Runtime: 2 minute(s) and 43.21 second(s)
+
+Episode 353:
+  Average meanTravelTime : 308.6520514964009
+  Average waitingTime: 73.75634646981233
+  Runtime: 2 minute(s) and 42.48 second(s)
+
+Episode 354:
+  Average meanTravelTime : 307.6590993702262
+  Average waitingTime: 70.82981771134163
+  Runtime: 2 minute(s) and 41.15 second(s)
+
+Episode 355:
+  Average meanTravelTime : 307.7181887086957
+  Average waitingTime: 70.29518086212875
+  Runtime: 2 minute(s) and 49.33 second(s)
+
+Episode 356:
+  Average meanTravelTime : 307.6587789790465
+  Average waitingTime: 71.85153303251185
+  Runtime: 2 minute(s) and 42.48 second(s)
+
+Episode 357:
+  Average meanTravelTime : 306.8048520314289
+  Average waitingTime: 69.7580917176851
+  Runtime: 2 minute(s) and 43.82 second(s)
+
+Episode 358:
+  Average meanTravelTime : 306.97749038622106
+  Average waitingTime: 70.39889926926278
+  Runtime: 2 minute(s) and 45.25 second(s)
+
+Episode 359:
+  Average meanTravelTime : 310.4908097865468
+  Average waitingTime: 72.54292584799649
+  Runtime: 2 minute(s) and 41.48 second(s)
+
+Episode 360:
+  Average meanTravelTime : 306.22662988352033
+  Average waitingTime: 69.2127752998544
+  Runtime: 2 minute(s) and 43.33 second(s)
+
+Episode 361:
+  Average meanTravelTime : 309.6427030039479
+  Average waitingTime: 73.95866642022088
+  Runtime: 2 minute(s) and 49.45 second(s)
+
+Episode 362:
+  Average meanTravelTime : 307.1730635902591
+  Average waitingTime: 70.66726768377254
+  Runtime: 2 minute(s) and 46.86 second(s)
+
+Episode 363:
+  Average meanTravelTime : 306.8496293819345
+  Average waitingTime: 68.74703666905428
+  Runtime: 58 minute(s) and 34.69 second(s)
+
+Episode 364:
+  Average meanTravelTime : 306.2493780304287
+  Average waitingTime: 71.85600185206621
+  Runtime: 2 minute(s) and 41.63 second(s)
+
+Episode 365:
+  Average meanTravelTime : 311.7912812796098
+  Average waitingTime: 74.35204483349544
+  Runtime: 2 minute(s) and 45.32 second(s)
+
+Episode 366:
+  Average meanTravelTime : 308.78031934459335
+  Average waitingTime: 71.28969867825123
+  Runtime: 3 minute(s) and 3.00 second(s)
+
+Episode 367:
+  Average meanTravelTime : 304.8850927938452
+  Average waitingTime: 68.81850542033608
+  Runtime: 2 minute(s) and 58.33 second(s)
+
+Episode 368:
+  Average meanTravelTime : 307.0172434932902
+  Average waitingTime: 69.83767794416713
+  Runtime: 2 minute(s) and 56.41 second(s)
+
+Episode 369:
+  Average meanTravelTime : 305.85065819539403
+  Average waitingTime: 68.53406700113287
+  Runtime: 2 minute(s) and 43.67 second(s)
+
+Episode 370:
+  Average meanTravelTime : 309.3457732820628
+  Average waitingTime: 71.5784653808797
+  Runtime: 2 minute(s) and 51.91 second(s)
+
+Episode 371:
+  Average meanTravelTime : 307.58185531962476
+  Average waitingTime: 70.60540678044494
+  Runtime: 2 minute(s) and 47.53 second(s)
+
+Episode 372:
+  Average meanTravelTime : 306.08848130189455
+  Average waitingTime: 69.39193563303431
+  Runtime: 2 minute(s) and 47.00 second(s)
+
+Episode 373:
+  Average meanTravelTime : 308.4331873153925
+  Average waitingTime: 72.54096349283515
+  Runtime: 2 minute(s) and 48.34 second(s)
+
+Episode 374:
+  Average meanTravelTime : 308.3257342696289
+  Average waitingTime: 72.67571884984025
+  Runtime: 2 minute(s) and 47.62 second(s)
+
+Episode 375:
+  Average meanTravelTime : 311.32371732709385
+  Average waitingTime: 74.97985178323297
+  Runtime: 2 minute(s) and 46.51 second(s)
+
+Episode 376:
+  Average meanTravelTime : 307.3073705623365
+  Average waitingTime: 70.59107196523107
+  Runtime: 2 minute(s) and 47.74 second(s)
+
+Episode 377:
+  Average meanTravelTime : 305.89743019561973
+  Average waitingTime: 70.88898923237235
+  Runtime: 2 minute(s) and 53.95 second(s)
+
+Episode 378:
+  Average meanTravelTime : 307.0908933846069
+  Average waitingTime: 70.723603561929
+  Runtime: 2 minute(s) and 48.39 second(s)
+
+Episode 379:
+  Average meanTravelTime : 306.7676308309705
+  Average waitingTime: 70.30447540491208
+  Runtime: 2 minute(s) and 53.93 second(s)
+
+Episode 380:
+  Average meanTravelTime : 307.0253642088841
+  Average waitingTime: 71.70042993851418
+  Runtime: 2 minute(s) and 55.37 second(s)
+
+Episode 381:
+  Average meanTravelTime : 307.8566750264711
+  Average waitingTime: 69.52965504493889
+  Runtime: 4 minute(s) and 21.47 second(s)
+
+Episode 382:
+  Average meanTravelTime : 307.4427921752182
+  Average waitingTime: 71.67601008348944
+  Runtime: 2 minute(s) and 43.60 second(s)
+
+Episode 383:
+  Average meanTravelTime : 308.9821819093698
+  Average waitingTime: 71.13399990763405
+  Runtime: 2 minute(s) and 44.16 second(s)
+
+Episode 384:
+  Average meanTravelTime : 308.27584963495667
+  Average waitingTime: 71.76507040950817
+  Runtime: 2 minute(s) and 45.28 second(s)
+
+Episode 385:
+  Average meanTravelTime : 306.6952689070929
+  Average waitingTime: 70.66445466947212
+  Runtime: 2 minute(s) and 43.33 second(s)
+
+Episode 386:
+  Average meanTravelTime : 308.33046536253426
+  Average waitingTime: 70.1269987984102
+  Runtime: 2 minute(s) and 43.81 second(s)
+
+Episode 387:
+  Average meanTravelTime : 304.7264855375363
+  Average waitingTime: 68.26659580859076
+  Runtime: 2 minute(s) and 42.01 second(s)
+
+Episode 388:
+  Average meanTravelTime : 308.804285793902
+  Average waitingTime: 71.54297199889105
+  Runtime: 2 minute(s) and 45.47 second(s)
+
+Episode 389:
+  Average meanTravelTime : 305.87531349272797
+  Average waitingTime: 69.8904451532381
+  Runtime: 2 minute(s) and 43.10 second(s)
+
+Episode 390:
+  Average meanTravelTime : 308.23220698879516
+  Average waitingTime: 71.29858477476644
+  Runtime: 2 minute(s) and 41.88 second(s)
+
+Episode 391:
+  Average meanTravelTime : 308.8309602630585
+  Average waitingTime: 73.86804929365795
+  Runtime: 2 minute(s) and 42.98 second(s)
+
+Episode 392:
+  Average meanTravelTime : 306.91786112349564
+  Average waitingTime: 70.10810123656535
+  Runtime: 2 minute(s) and 42.13 second(s)
+
+Episode 393:
+  Average meanTravelTime : 307.77646380204004
+  Average waitingTime: 70.31999722645958
+  Runtime: 2 minute(s) and 42.91 second(s)
+
+Episode 394:
+  Average meanTravelTime : 306.8584049490068
+  Average waitingTime: 70.17781987018087
+  Runtime: 2 minute(s) and 44.83 second(s)
+
+Episode 395:
+  Average meanTravelTime : 308.20554032213084
+  Average waitingTime: 71.58511720375422
+  Runtime: 2 minute(s) and 43.68 second(s)
+
+Episode 396:
+  Average meanTravelTime : 308.6188831299127
+  Average waitingTime: 71.74543479265868
+  Runtime: 2 minute(s) and 43.85 second(s)
+
+Episode 397:
+  Average meanTravelTime : 309.84368444518424
+  Average waitingTime: 73.07099236641221
+  Runtime: 2 minute(s) and 43.81 second(s)
+
+Episode 398:
+  Average meanTravelTime : 306.6748408850215
+  Average waitingTime: 71.94945898455563
+  Runtime: 2 minute(s) and 43.00 second(s)
+
+Episode 399:
+  Average meanTravelTime : 306.9507596277089
+  Average waitingTime: 71.45174200712535
+  Runtime: 2 minute(s) and 42.87 second(s)
+
+Episode 400:
+  Average meanTravelTime : 309.62513682215973
+  Average waitingTime: 73.01096384706128
+  Runtime: 3 minute(s) and 2.82 second(s)
